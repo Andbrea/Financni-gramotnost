@@ -1,1 +1,1 @@
-# Financni-gramotnost
+# o-projektu
