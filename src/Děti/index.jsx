@@ -1,10 +1,11 @@
 import React from 'react';
-import './style.css';
+/* import './style.css'; */
+import SecPage from './Pages/SecPage';
 
 const Děti = () => {
 return (
 <>
-<h2>Nec  o</h2>
+<SecPage/>
 </>
     )
 };

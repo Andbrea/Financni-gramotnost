@@ -12,7 +12,6 @@ import Děti from './Děti';
 import Dospělí from './Dospělí';
 import Teens from './Teens';
 import Home from './Home';
-import Header from './PageLayout/Header';
 import PageLayout from './PageLayout';
 /* import obrazek from './Home/img/Uvodnii.jpg';
 console.log(obrazek);/* <img className="uvodniFoto" src={(obrazek)} /> */
