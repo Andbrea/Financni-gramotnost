@@ -25,9 +25,38 @@ const App = () => {
                         <Home />
                     </Route>
                     <Route path="/deti">
-                        <PageLayout>
-                            {' '}
-                            <Děti />{' '}
+                        <PageLayout
+                            title="Děti"
+                            links={
+                            <>
+                            <Link
+                                className="navigation-link"
+                                to="/deti/minceabankovky"
+                            >
+                                Mince a Bankovky
+                            </Link>
+                            <Link
+                                className="navigation-link"
+                                to="/deti/kcemuslouzipenize"
+                            >
+                                K čemu slouží peníze
+                            </Link>
+                            <Link
+                                className="navigation-link"
+                                to="/deti/platebnikarta"
+                            >
+                                Platební karta
+                            </Link>
+                            <Link
+                                className="navigation-link"
+                                to="/deti/kviz"
+                            >
+                                Kvíz
+                            </Link>
+                            </>
+                            }
+                            >
+                            <Děti />
                         </PageLayout>
                     </Route>
                     <Route path="/dospeli">

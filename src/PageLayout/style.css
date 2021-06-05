@@ -25,6 +25,7 @@
     position: fixed;
     left: 10px;
     top: 10px;
+    text-decoration: none;
 }
 
 .footer {
@@ -36,8 +37,11 @@
     color: white;
     text-align: center;
     height: 20px;
+    font-size: 10px;
 }
-
+.padd {
+    padding-top: 3px;
+}
 .navigation {
     position: fixed;
 

@@ -6,11 +6,11 @@ import Pexeso from './Pexeso/index';
 const FirstPage = () => {
 return (
 <>
-<div className="firstContainer">
+{/* <div className="firstContainer">
   <div className="firstImages">
      
   </div>
-</div>
+</div> */}
 
 
 <Pexeso/>

@@ -16,7 +16,7 @@ const PageLayout = ({ children, title, links }) => {
 
             <div className="content"> {children} </div>
 
-            <div className="footer"></div>
+            <div className="footer padd">© 2021, Andrea Bravencová, Iveta Vrobelová, Jitka Ševčíková, projekt byl vytvořen v rámci DA Czechitas</div>
         </>
     );
 };
