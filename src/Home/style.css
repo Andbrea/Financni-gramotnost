@@ -1,11 +1,24 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-family: 'Open Sans', sans-serif;
-  }
+  box-sizing: border-box;
+}
 
-/* .uvodniFoto {
-  background: url('assets/Uvodnii.jpg');
-} */
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  height: 100px;
+  background-color: green;
+}
+
+.nadpis {
+  font-size: 40px;
+  color: darkgreen;
+  text-align: center;
+}
+
+.podnadpis {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
