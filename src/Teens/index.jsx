@@ -27,6 +27,8 @@ const Teens = () => {
                     <Route path="/teenageri/potrebujiversuschci">
                         <Page
                             title="Potřebuji versus chci"
+                            path="../../assets/img/Teens.svg"
+                            altName="teens"
                             text="Je třeba si uvědomit, že peníze jsou tu k tomu, aby zajišťovaly hlavně naše základní lidské potřeby. Platíme jimi jídlo, bydlení, oblečení a léky. Teprve na druhém místě by měly být peníze použity na volnočasové aktivity a jiné věci. Před pořízením nové věci je vždy třeba si uvědomit, co je důležitější. Opravdu tu věc potřebuji nebo ji jenom chci? Nenechávám se ovlivnit okolím – přátelé, reklamy?"
                         />
                     </Route>
