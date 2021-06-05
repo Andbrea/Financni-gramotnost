@@ -20,7 +20,8 @@ const App = () => {
             <Router>
                 <Switch>
                     <Route exact path="/">
-                        <Home />
+                        <Home/>
+
                     </Route>
                     <Route path="/deti">
                         <PageLayout
