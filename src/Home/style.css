@@ -6,6 +6,8 @@
     font-family: 'Open Sans', sans-serif;
   }
 
-/* .uvodniFoto {
-    background-image: url('./img/Uvodnii.jpg');
-} */
+.header {
+  height: 100px;
+  background-color: green;
+}
+

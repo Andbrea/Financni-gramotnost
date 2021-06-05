@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-const Andrea = () => {
+const Děti = () => {
 return (
 <>
 <h2>Neco</h2>
@@ -9,4 +9,4 @@ return (
     )
 };
 
-export default Andrea;
+export default Děti;

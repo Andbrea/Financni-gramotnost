@@ -5,9 +5,11 @@ const Home = () => {
 
 return (
 <>
-<h2>Prvni prototyp naší úvodní stránky</h2>
+<div className="header"> </div>
+<div className="vrstva_4"> </div>
 
-{/* //img  src="/src/Home/Uvodnii 1.1.jpg" alt="uvodni stranka" /> */}
+
+
 </>
     )
 };

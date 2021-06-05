@@ -9,39 +9,39 @@ import {
   Link,
   useParams
 } from 'react-router-dom';
-import Andrea from './Andrea';
-import Jitka from './Jitka';
-import Iveta from './Iveta';
+import Děti from './Děti';
+import Dospělí from './dospělí';
+import Teenageri from './teenageri';
 import Home from './Home';
 
 const App = () => (
 <>
-<h1>Finanční gramotnost</h1>
+{/* <h1>Finanční gramotnost</h1>
 <p>Náš projekt se týká vytvoření informačního webu pro děti, teenagery a dospělé. Ty budeme chtít zábavní formou seznámit se základními pojmy 
-        finanční gramotnosti. Níže je něco o každé z nás...</p>
+        finanční gramotnosti. Níže je něco o každé z nás...</p> */}
 {/* Nefunguje
 <img className="uvodniFoto" src={require('./img/Uvodnii.jpg')} /> */}
 
         <Router>
       <div>
               <Link className="menu" to="/home">Hlavní stránka</Link>
-              <Link className="menu" to="/andrea">Andrea</Link>
-              <Link className="menu" to="/jitka">Jitka</Link>
-              <Link className="menu" to="/iveta">Iveta</Link>
+              <Link className="menu" to="/deti">Děti</Link>
+              <Link className="menu" to="/dospeli">Dospělí</Link>
+              <Link className="menu" to="/teenageri">Teenageři</Link>
 
   
         <Switch>
           <Route path="/home">
             <Home />
           </Route>
-          <Route path="/andrea">
-            <Andrea />
+          <Route path="/deti">
+            <Děti />
           </Route>
-          <Route path="/jitka">
-            <Jitka />
+          <Route path="/dospeli">
+            <Dospělí />
           </Route>
-          <Route path="/iveta">
-            <Iveta />
+          <Route path="/teenageri">
+            <Teenageri />
           </Route>
         </Switch>
       </div>
