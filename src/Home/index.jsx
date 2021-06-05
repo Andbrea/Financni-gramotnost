@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <div className="header"> </div>
       <div className="vrstva_4"> </div>
-      <div className="nadpis">FINANČNÍ GRAMOTNOS</div>
+      <div className="nadpis">FINANČNÍ GRAMOTNOST</div>
       <div className="podnadpis">S penězi si poradím!</div>
     </>
   );
