@@ -74,6 +74,8 @@ return (
         text={"Pět tisíc korun"} 
         />
         </div>
+        <p>Myslíš, že je znáš všechny? Pojď si to vyzkoušet!</p>
+        <button>Hrát</button>
 </>
   )
 };
