@@ -1,8 +1,38 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f7f6e2;
-  }
+body {
+  background: #f7f6e2;
+}
+
+/* .secImages {
+    height: 100px;
+    width: 100px;
+
+    position: fixed;
+    left: 200px;
+    right: 0;
+    top: 100px;
+    bottom: 20px;
+  } */
+
+
+
+/* 
+.home {
+  position: fixed;
+  left: 200px;
+  right: 0;
+  top: 100px;
+  bottom: 20px;
+  height: 100px;
+  width: 100px;
+}
+
+.home:active {
+  background-color: black;
+} */
+/* .groceries {
+    position: fixed;
+    top: 200px;
+    right: 0;
+    bottom: 50px;
+    left: 200px;
+  } */   
