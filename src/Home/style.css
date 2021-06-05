@@ -1,25 +1,25 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: 'Poppins', sans-serif;
-  background-color: #ffff99;
-}
-
-.header {
+/* .uvod-header {
   height: 100px;
   background-color: green;
 }
 
-.nadpis {
+.uvod-nadpis {
   font-size: 40px;
   color: darkgreen;
   text-align: center;
 }
 
-.podnadpis {
+.uvod-podnadpis {
   font-size: 20px;
   color: white;
   text-align: center;
+}
+ */
+
+.uvod-box {
+  height: 100%;
+}
+
+.uvod-hlavicka {
+  border: 1px solid red;
 }
