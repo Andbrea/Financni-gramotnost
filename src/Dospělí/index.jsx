@@ -1,11 +1,11 @@
 import React from 'react';
 import './style.css';
 
-const Jitka = () => {
+const Dospělí = () => {
 return (
 <>
 </>
     )
 };
 
-export default Jitka;
+export default Dospělí;

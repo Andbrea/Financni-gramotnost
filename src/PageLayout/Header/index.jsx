@@ -1,12 +1,12 @@
 import React from 'react';
 import './style.css';
 
-const Děti = () => {
+const Header = () => {
 return (
 <>
-<h2>Nec  o</h2>
+<div className="header"></div>
 </>
     )
 };
 
-export default Děti;
+export default Header;
