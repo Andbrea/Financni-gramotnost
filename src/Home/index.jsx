@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
+import Karta from './Karta';
 
 const Home = () => {
   return (
@@ -18,19 +19,21 @@ const Home = () => {
         </div>
         <div className="uvod-skupiny">
           <div className="uvod-karta">
-            <Link className="menu" to="/deti">
-              Děti
-            </Link>
+            <Karta title="Děti" to="/deti" cesta="/assets/img/Kids.svg" />
           </div>
           <div className="uvod-karta">
-            <Link className="menu" to="/dospeli">
-              Dospělí
-            </Link>
+            <Karta
+              title="Teenager"
+              to="/teenageri"
+              cesta="/assets/img/Teens.svg"
+            />
           </div>
           <div className="uvod-karta">
-            <Link className="menu" to="/teenageri">
-              Teenageři
-            </Link>
+            <Karta
+              title="Dospělí"
+              to="/dospeli"
+              cesta="/assets/img/Adults.svg"
+            />
           </div>
         </div>
         <div className="uvod-paticka">

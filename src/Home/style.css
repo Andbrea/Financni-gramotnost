@@ -34,11 +34,14 @@
 .uvod-skupiny {
   border: 1px solid black;
   flex: 3;
+  display: flex;
+  flex-direction: row;
 }
 
-/*.uvod-karta {
+.uvod-karta {
   border: 1px solid fuchsia;
-}*/
+  flex: 1;
+}
 
 .uvod-paticka {
   border: 1px solid orangered;
