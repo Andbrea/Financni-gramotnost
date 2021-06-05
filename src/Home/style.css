@@ -18,8 +18,29 @@
 
 .uvod-box {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .uvod-hlavicka {
+  flex: 0;
   border: 1px solid red;
+}
+
+.uvod-text {
+  border: 1px solid blue;
+  flex: 1;
+}
+.uvod-skupiny {
+  border: 1px solid black;
+  flex: 3;
+}
+
+/*.uvod-karta {
+  border: 1px solid fuchsia;
+}*/
+
+.uvod-paticka {
+  border: 1px solid orangered;
+  flex: 0;
 }

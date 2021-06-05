@@ -33,7 +33,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="uvod-paticku">
+        <div className="uvod-paticka">
           2021, Andrea Bravencová, Iveta Vrobelová, Jitka Ševčíková{' '}
         </div>
       </div>
