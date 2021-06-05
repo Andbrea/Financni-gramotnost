@@ -13,40 +13,45 @@ import Děti from './Děti';
 import Dospělí from './dospělí';
 import Teenageri from './teenageri';
 import Home from './Home';
+import Header from './PageLayout/Header';
+import PageLayout from './PageLayout';
+/* import obrazek from './Home/img/Uvodnii.jpg';
+console.log(obrazek);/* <img className="uvodniFoto" src={(obrazek)} /> */ 
 
-const App = () => (
+const App = () => {
+  return (
 <>
-{/* <h1>Finanční gramotnost</h1>
-<p>Náš projekt se týká vytvoření informačního webu pro děti, teenagery a dospělé. Ty budeme chtít zábavní formou seznámit se základními pojmy 
-        finanční gramotnosti. Níže je něco o každé z nás...</p> */}
-{/* Nefunguje
-<img className="uvodniFoto" src={require('./img/Uvodnii.jpg')} /> */}
 
         <Router>
       <div>
-              <Link className="menu" to="/home">Hlavní stránka</Link>
-              <Link className="menu" to="/deti">Děti</Link>
-              <Link className="menu" to="/dospeli">Dospělí</Link>
-              <Link className="menu" to="/teenageri">Teenageři</Link>
+
 
   
         <Switch>
           <Route path="/home">
+              <Link className="menu" to="/home">Hlavní stránka</Link>
+              <Link className="menu" to="/deti">Děti</Link>
+              <Link className="menu" to="/dospeli">Dospělí</Link>
+              <Link className="menu" to="/teenageri">Teenageři</Link>
             <Home />
+
           </Route>
-          <Route path="/deti">
-            <Děti />
+            <Route path="/deti">
+            < PageLayout> <Děti /> </PageLayout> 
           </Route>
           <Route path="/dospeli">
-            <Dospělí />
+          
+            < PageLayout><Dospělí /></PageLayout> 
+        
           </Route>
           <Route path="/teenageri">
-            <Teenageri />
+          < PageLayout><Teenageri /></PageLayout> 
           </Route>
         </Switch>
       </div>
     </Router>
-</> 
-);
+</>
+  );
+}
 
 render(<App />, document.querySelector('#app'));

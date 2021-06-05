@@ -1,15 +1,12 @@
 import React from 'react';
 import './style.css';
 
-const Home = () => {
-
+const Footer = () => {
 return (
 <>
-<div className="header"> </div>
-
-
+<div className="footer"></div>
 </>
     )
 };
 
-export default Home;
+export default Footer;
