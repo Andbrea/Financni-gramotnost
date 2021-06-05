@@ -6,11 +6,9 @@ import './style.css';
 const Page = ({ text, title, path, altName }) => {
     return (
         <>
-            <div className="page-content">
-                <Subtitle text={title} />
-                <Image path={path} altName={altName} />
-                <p>{text}</p>
-            </div>
+            <Subtitle text={title} />
+            <Image path={path} altName={altName} />
+            <p>{text}</p>
         </>
     );
 };

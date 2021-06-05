@@ -1,9 +1,14 @@
 .content {
     position: fixed;
-    left: 100px;
+    left: 200px;
     right: 0;
     top: 50px;
     bottom: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .header {
     background-color: #98cfa5;
@@ -20,6 +25,7 @@
     position: fixed;
     left: 10px;
     top: 10px;
+    text-decoration: none;
 }
 
 .footer {
@@ -31,8 +37,11 @@
     color: white;
     text-align: center;
     height: 20px;
+    font-size: 10px;
 }
-
+.padd {
+    padding-top: 3px;
+}
 .navigation {
     position: fixed;
 
@@ -46,7 +55,7 @@
     right: 0;
     top: 50px;
     bottom: 20px;
-    width: 150px;
+    width: 200px;
     border: 1px solid red;
 }
 
