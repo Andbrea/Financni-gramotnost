@@ -13,8 +13,6 @@ import Dospělí from './Dospělí';
 import Teens from './Teens';
 import Home from './Home';
 import PageLayout from './PageLayout';
-/* import obrazek from './Home/img/Uvodnii.jpg';
-console.log(obrazek);/* <img className="uvodniFoto" src={(obrazek)} /> */
 
 const App = () => {
     return (
@@ -99,6 +97,12 @@ const App = () => {
                                         to="/teenageri/platebnikarta"
                                     >
                                         Platební karta
+                                    </Link>
+                                    <Link
+                                        className="navigation-link"
+                                        to="/teenageri/sporicikalkulacka"
+                                    >
+                                        Spořicí kalkulačka
                                     </Link>
                                 </>
                             }

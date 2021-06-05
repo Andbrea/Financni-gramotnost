@@ -18,6 +18,8 @@ return (
             <div>
                 <Switch>
                     <Route exact path="/deti">
+                    </Route>
+                    <Route path="/deti/minceabankovky">
                         <FirstPage/>
                     </Route>
                     <Route path="/deti/kcemuslouzipenize">
