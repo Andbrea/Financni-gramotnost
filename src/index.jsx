@@ -54,7 +54,7 @@ const App = () => {
                                 <>
                                     <Link
                                         className="navigation-link"
-                                        to="/teenageri/potrebujiversuschci"
+                                        to="/teenageri"
                                     >
                                         Potřebuji vs chci
                                     </Link>
