@@ -1,12 +1,12 @@
 import React from 'react';
 import './style.css';
 
-const Footer = () => {
+const SecPage = () => {
 return (
 <>
-<div className="footer"></div>
+<h1>neco</h1>
 </>
     )
 };
 
-export default Footer;
+export default SecPage;

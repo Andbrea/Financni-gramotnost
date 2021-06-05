@@ -1,15 +1,18 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
+import './style.css';
+
 
 
 const PageLayout = ( {children}) => {
 
 return (
 <>
-<Header/>
-{children}
-<Footer />
+
+<div className="footer"></div>
+<div className="content"> {children} </div>
+<div className="header"></div>
+
+
 
 </>
     )

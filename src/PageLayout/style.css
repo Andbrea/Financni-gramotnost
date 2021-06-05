@@ -1,0 +1,29 @@
+
+.content {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 20px;
+}
+.header {
+    background-color: #98cfa5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    height: 50px;
+
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #98cfa5;
+    color: white;
+    text-align: center;
+    height: 20px;
+  }
