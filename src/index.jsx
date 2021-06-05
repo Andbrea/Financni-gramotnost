@@ -22,18 +22,6 @@ const App = () => {
             <Router>
                 <Switch>
                     <Route exact path="/">
-                        <Link className="menu" to="/home">
-                            Hlavní stránka
-                        </Link>
-                        <Link className="menu" to="/deti">
-                            Děti
-                        </Link>
-                        <Link className="menu" to="/dospeli">
-                            Dospělí
-                        </Link>
-                        <Link className="menu" to="/teenageri">
-                            Teenageři
-                        </Link>
                         <Home />
                     </Route>
                     <Route path="/deti">
