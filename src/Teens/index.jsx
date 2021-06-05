@@ -7,22 +7,6 @@ const Teens = () => {
     return (
         <>
             <div>
-                <Link className="menu" to="/teenageri/potrebujiversuschci">
-                    Potřebuji versus chci
-                </Link>
-                <Link className="menu" to="/teenageri/zdrojpenez">
-                    Zdroj peněz
-                </Link>
-                <Link className="menu" to="/teenageri/sporeni">
-                    Spoření
-                </Link>
-                <Link className="menu" to="/teenageri/bankovniucet">
-                    Bankovní účet
-                </Link>
-                <Link className="menu" to="/teenageri/platebnikarta">
-                    Platební karta
-                </Link>
-
                 <Switch>
                     <Route path="/teenageri/potrebujiversuschci">
                         <Page
