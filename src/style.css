@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .menu {
-  padding: 10px;
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  background-color: rgb(159, 229, 247);
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(159, 229, 247);
 }
 .menu:hover,
 .menu:focus {
-  background-color: cornsilk;
+    background-color: cornsilk;
 }
