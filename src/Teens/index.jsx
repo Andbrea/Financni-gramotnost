@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Page from './Page';
+import SavingCalculator from './SavingCalculator';
 import './style.css';
 
 const Teens = () => {
@@ -38,6 +39,11 @@ const Teens = () => {
                         title="Platební karta"
                         text="Ke každému bankovnímu účtu je vystavena platební karta, která nahrazuje placení bankovkami a mincemi. Je na ní vždy uvedeno jméno vlastníka, číslo karty, datum doby platnosti a trojciferný bezpečnostní kód. Při platbě kartou potřebuješ znát pin karty, což jsou čtyři libovolná čísla, která si musíš pamatovat. Nikdy neposkytuj tento pin, ani informace o kartě cizí osobě! Mohl bys přijít o své úspory."
                     />
+                </Route>
+                <Route path="/teenageri/sporicikalkulacka">
+                    <Page title="Spořicí kalkulačka">
+                        <SavingCalculator />
+                    </Page>
                 </Route>
             </Switch>
         </>
