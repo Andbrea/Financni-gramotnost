@@ -1,8 +1,10 @@
 import React from 'react';
+import Subtitle from '../../components/Subtitle';
 
-const Page = ({ text }) => {
+const Page = ({ text, title }) => {
     return (
         <>
+            <Subtitle text={title} />
             <p>{text}</p>
         </>
     );
