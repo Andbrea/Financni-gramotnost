@@ -1,15 +1,24 @@
-.firstContainer {
+
+
+.moneyBox {
     display: flex;
-    justify-content: center;
-    height: 100px;
-    width: 100px;
-    border: 1px solid, black;
-    background-color:black
+    flex-direction: column;
+    border: 1px solid red;
+    background-color: #ffff;
+    margin: 15px;
+    border-radius: 10%;
 }
-
-
-/* position: relative;
-right: 150px;
-left: 150px;
-top: 150px;
-bottom: 150px; */
+.moneyCoins,
+.moneyCash {
+    display: flex;
+    flex-direction: row;
+}
+.moneyBox-Img {
+    height: 79px;
+    width: 79px;
+    margin: 15px;
+}
+.moneyCash img {
+    height: 58px;
+    width: 79;
+}
