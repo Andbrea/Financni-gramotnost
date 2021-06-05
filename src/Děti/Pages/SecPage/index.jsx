@@ -1,12 +1,14 @@
 import React from 'react';
 import './style.css';
+import home from './img/HOME.png';
+import groceries from './img/groceries.png';
+
 
 const SecPage = () => {
 return (
 <>
-<h1>neco</h1>
 </>
-    )
+  )
 };
 
-export default SecPage;
+export default SecPage; 

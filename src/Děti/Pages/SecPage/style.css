@@ -1,8 +1,5 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f7f6e2;
-  }
+body {
+  background: #f7f6e2;
+}
+
+ 
