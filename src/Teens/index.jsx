@@ -1,30 +1,28 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { render } from 'react-dom';
 import Page from './Page';
 import './style.css';
 
 const Teens = () => {
     return (
         <>
-            <Router>
-                <div>
-                    <Link className="menu" to="/potrebujiversuschci">
-                        Potřebuji versus chci
-                    </Link>
-                    <Link className="menu" to="/teenageri/zdrojpenez">
-                        Zdroj peněz
-                    </Link>
-                    <Link className="menu" to="/teenageri/sporeni">
-                        Spoření
-                    </Link>
-                    <Link className="menu" to="/teenageri/bankovniucet">
-                        Bankovní účet
-                    </Link>
-                    <Link className="menu" to="/teenageri/platebnikart">
-                        Platební karta
-                    </Link>
-
+            <div>
+                <Link className="menu" to="/potrebujiversuschci">
+                    Potřebuji versus chci
+                </Link>
+                <Link className="menu" to="/teenageri/zdrojpenez">
+                    Zdroj peněz
+                </Link>
+                <Link className="menu" to="/teenageri/sporeni">
+                    Spoření
+                </Link>
+                <Link className="menu" to="/teenageri/bankovniucet">
+                    Bankovní účet
+                </Link>
+                <Link className="menu" to="/teenageri/platebnikart">
+                    Platební karta
+                </Link>
+                <Router>
                     <Switch>
                         <Route path="/teenageri/potrebujiversuschci">
                             <Page text="Je třeba si uvědomit, že peníze jsou tu k tomu, aby zajišťovaly hlavně naše základní lidské potřeby. Platíme jimi jídlo, bydlení, oblečení a léky. Teprve na druhém místě by měly být peníze použity na volnočasové aktivity a jiné věci. Před pořízením nové věci je vždy třeba si uvědomit, co je důležitější. Opravdu tu věc potřebuji nebo ji jenom chci? Nenechávám se ovlivnit okolím – přátelé, reklamy?" />
@@ -42,8 +40,8 @@ const Teens = () => {
                             <Page text="Ke každému bankovnímu účtu je vystavena platební karta, která nahrazuje placení bankovkami a mincemi. Je na ní vždy uvedeno jméno vlastníka, číslo karty, datum doby platnosti a trojciferný bezpečnostní kód. Při platbě kartou potřebuješ znát pin karty, což jsou čtyři libovolná čísla, která si musíš pamatovat. Nikdy neposkytuj tento pin, ani informace o kartě cizí osobě! Mohl bys přijít o své úspory." />
                         </Route>
                     </Switch>
-                </div>
-            </Router>
+                </Router>
+            </div>
         </>
     );
 };

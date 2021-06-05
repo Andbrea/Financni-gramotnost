@@ -1,12 +1,12 @@
 import React from 'react';
 import './style.css';
 
-const Děti = () => {
+const Footer = () => {
 return (
 <>
-<h2>Nec  o</h2>
+<div className="footer"></div>
 </>
     )
 };
 
-export default Děti;
+export default Footer;
