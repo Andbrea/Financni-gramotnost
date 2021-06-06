@@ -24,6 +24,7 @@ body {
   text-decoration: none;
   color: black;
   background-color: rgb(159, 229, 247);
+  width: 100%;
 }
 .menu:hover,
 .menu:focus {

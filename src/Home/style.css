@@ -2,7 +2,7 @@
   /*background: url('../assets/img/lista.svg');*/
   background-size: cover;
   flex: 0;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   text-align: center;
   position: relative;
 }
@@ -36,33 +36,38 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .uvod-text {
-  border: 1px solid blue;
-  flex: 1;
-  font-size: 2.1vw;
+  /*border: 1px solid blue;*/
+  flex: 0;
+  font-size: 1.8vw;
   color: darkgreen;
   text-align: center;
-  margin: 9%;
+  margin: 0 4%;
 }
 .uvod-skupiny {
-  border: 1px solid black;
-  flex: 3;
+ /* border: 1px solid black;*/
+  flex: 0;
   display: flex;
   flex-direction: row;
+  margin-left: 8%;
+  margin-right: 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 60px;
 }
 
 .uvod-karta {
-  border: 1px solid fuchsia;
+ /* border: 1px solid fuchsia;*/
   flex: 1;
   text-align: center;
   flex-basis: 10%;
-  margin: 30px;
 }
 
 .uvod-paticka {
-  border: 1px solid orangered;
+ /* border: 1px solid orangered;*/
   flex: 0;
   text-align: center;
   font-size: 1.3vw;
@@ -76,12 +81,12 @@
 
 .postavy img {
   position: relative;
-  margin: auto;
+  margin: 0 auto 10% auto;
 }
 
 .postavy {
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 20vw;
   text-align: center;
 }

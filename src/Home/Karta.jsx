@@ -8,7 +8,7 @@ const Karta = ({ title, to, cesta, zoom }) => {
       <div className="karta">
         <div className="postavy">
           <div className="volnemisto"></div>
-          <img src={cesta} style={{ width: zoom }} />
+          <img src={cesta} style={{ height: zoom }} />
         </div>
         <Link className="menu" to={to}>
           {title}

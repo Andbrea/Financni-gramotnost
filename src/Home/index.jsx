@@ -41,7 +41,7 @@ const Home = () => {
                             title="Dospělí"
                             to="/dospeli"
                             cesta="/assets/img/Adults.svg"
-                            zoom="100%"
+                            zoom="90%"
                         />
                     </div>
                 </div>
