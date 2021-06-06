@@ -1,15 +1,11 @@
 /* @import "~/dragula/dist/dragula.css"; */
 
-html,
-body {
-  overflow: hidden;
-}
-
 .container {
   display: flex;
   flex-direction: column;
   width: fit-content;
 }
+.box,
 .boxes > div {
   border: 1px solid black;
   padding-left: 50px;

@@ -24,14 +24,14 @@ export class FourPage extends React.Component {
           onClick={function () {
             this.setState({ color: "red" });
           }}
-          /* className={this.color ? "container onSelected" : "container"} */
+          /* className={this.state.color ? "container onSelected" : "container"} */
           className={"boxes"}
           ref={this.dragulaDecorator}
         >
-          <div className="chleba">Chleba</div>
-          <div className="lizatko">Lízátko</div>
-          <div className="pocitac">Počítač</div>
-          <div className="auto">Auto</div>
+          <div className="box chleba">Chleba</div>
+          <div className="box lizatko">Lízátko</div>
+          <div className="box pocitac">Počítač</div>
+          <div className="box auto">Auto</div>
         </div>
         <button className="btnElm" onClick={this.handleSubmit}>
           Vyhodnotit
