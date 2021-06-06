@@ -2,11 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 
-const Karta = ({ title, to, cesta }) => {
+const Karta = ({ title, to, cesta, zoom }) => {
   return (
     <>
       <div className="karta">
-        <img src={cesta} />
+        <div className="postavy">
+          <div className="volnemisto"></div>
+          <img src={cesta} style={{ width: zoom }} />
+        </div>
         <Link className="menu" to={to}>
           {title}
         </Link>

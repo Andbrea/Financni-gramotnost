@@ -14,6 +14,7 @@
 
 .uvod-nadpis {
   font-size: 4.8vw;
+  font-weight: bold;
   color: darkgreen;
   text-align: center;
   top: 20%;
@@ -43,7 +44,7 @@
   font-size: 2.1vw;
   color: darkgreen;
   text-align: center;
-  margin: 100px 100px;
+  margin: 9%;
 }
 .uvod-skupiny {
   border: 1px solid black;
@@ -64,7 +65,23 @@
   border: 1px solid orangered;
   flex: 0;
   text-align: center;
-  font-size: 12px;
+  font-size: 1.3vw;
   color: darkgreen;
   background-color: palegreen;
+}
+
+.volnemisto {
+  flex: 1;
+}
+
+.postavy img {
+  position: relative;
+  margin: auto;
+}
+
+.postavy {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  text-align: center;
 }

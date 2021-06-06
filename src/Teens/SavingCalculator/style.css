@@ -1,8 +1,10 @@
-/* .calculator-box {
-} */
+.calculator-box {
+    display: flex;
+    flex-direction: column;
+}
 
 .input-calc {
-    display: block;
+    /* display: block; */
 }
 
 .input-calc input {
@@ -17,4 +19,7 @@ input::-webkit-inner-spin-button {
 
 input[type='number']:disabled {
     background-color: white;
+}
+
+.button-count {
 }

@@ -24,14 +24,16 @@ const Home = () => {
                         <Karta
                             title="Děti"
                             to="/deti"
-                            cesta="/assets/img/Kids.svg"
+                            cesta="/assets/img/KidsColor.svg"
+                            zoom="50%"
                         />
                     </div>
                     <div className="uvod-karta">
                         <Karta
                             title="Teenager"
                             to="/teenageri"
-                            cesta="/assets/img/Teens.svg"
+                            cesta="/assets/img/TeensColor.svg"
+                            zoom="75%"
                         />
                     </div>
                     <div className="uvod-karta">
@@ -39,6 +41,7 @@ const Home = () => {
                             title="Dospělí"
                             to="/dospeli"
                             cesta="/assets/img/Adults.svg"
+                            zoom="100%"
                         />
                     </div>
                 </div>
