@@ -1,12 +1,14 @@
 import React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
+import Karta from './Karta';
 
 const Home = () => {
   return (
     <>
       <div className="uvod-box">
         <div className="uvod-hlavicka">
+          <img src="assets/img/lista.svg" />
           <div className="uvod-header"> </div>
           <div className="uvod-nadpis">FINANČNÍ GRAMOTNOST</div>
           <div className="uvod-podnadpis">S penězi si poradím!</div>
@@ -18,19 +20,28 @@ const Home = () => {
         </div>
         <div className="uvod-skupiny">
           <div className="uvod-karta">
-            <Link className="menu" to="/deti">
-              Děti
-            </Link>
+            <Karta
+              title="Děti"
+              to="/deti"
+              cesta="/assets/img/Kids.svg"
+              zoom="50%"
+            />
           </div>
           <div className="uvod-karta">
-            <Link className="menu" to="/dospeli">
-              Dospělí
-            </Link>
+            <Karta
+              title="Teenager"
+              to="/teenageri"
+              cesta="/assets/img/Teens.svg"
+              zoom="75%"
+            />
           </div>
           <div className="uvod-karta">
-            <Link className="menu" to="/teenageri">
-              Teenageři
-            </Link>
+            <Karta
+              title="Dospělí"
+              to="/dospeli"
+              cesta="/assets/img/Adults.svg"
+              zoom="100%"
+            />
           </div>
         </div>
         <div className="uvod-paticka">
