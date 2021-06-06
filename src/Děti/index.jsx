@@ -10,6 +10,7 @@ import {
   Route,
   Link,
   useParams,
+  Redirect,
 } from "react-router-dom";
 
 const Děti = () => {
@@ -17,9 +18,10 @@ const Děti = () => {
     <>
       <div>
         <Switch>
-          {/* <Route exact path="/deti">
-                    </Route> */}
-          <Route exact path="/deti/minceabankovky">
+          <Route exact path="/deti">
+            <Redirect to="/deti/minceabankovky" />
+          </Route>
+          <Route path="/deti/minceabankovky">
             <FirstPage />
           </Route>
           <Route path="/deti/kcemuslouzipenize">
