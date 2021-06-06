@@ -97,8 +97,13 @@ const SavingCalculator = () => {
                         />
                         měsíců
                     </label>
+                    <button
+                        className="button-count"
+                        onClick={calculateMonthlyAmmount}
+                    >
+                        Spočítej
+                    </button>
                 </span>
-                <button onClick={calculateMonthlyAmmount}>Spočítej</button>
 
                 <div>{result}</div>
             </div>
