@@ -20,13 +20,19 @@ const Home = () => {
         </div>
         <div className="uvod-skupiny">
           <div className="uvod-karta">
-            <Karta title="Děti" to="/deti" cesta="/assets/img/Kids.svg" />
+            <Karta
+              title="Děti"
+              to="/deti"
+              cesta="/assets/img/Kids.svg"
+              zoom="50%"
+            />
           </div>
           <div className="uvod-karta">
             <Karta
               title="Teenager"
               to="/teenageri"
               cesta="/assets/img/Teens.svg"
+              zoom="75%"
             />
           </div>
           <div className="uvod-karta">
@@ -34,6 +40,7 @@ const Home = () => {
               title="Dospělí"
               to="/dospeli"
               cesta="/assets/img/Adults.svg"
+              zoom="100%"
             />
           </div>
         </div>
