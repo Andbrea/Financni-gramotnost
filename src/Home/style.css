@@ -1,20 +1,35 @@
-/* .uvod-header {
-  height: 100px;
-  background-color: green;
+.uvod-hlavicka {
+  /*background: url('../assets/img/lista.svg');*/
+  background-size: cover;
+  flex: 0;
+  border: 1px solid red;
+  text-align: center;
+  position: relative;
+}
+
+.uvod-hlavicka img {
+  width: 100%;
+  height: auto;
 }
 
 .uvod-nadpis {
-  font-size: 40px;
+  font-size: 4.8vw;
   color: darkgreen;
   text-align: center;
+  top: 20%;
+  width: 100%;
+  position: absolute;
 }
 
 .uvod-podnadpis {
-  font-size: 20px;
+  font-size: 2.4vw;
+  font-weight: bold;
   color: white;
   text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 70%;
 }
- */
 
 .uvod-box {
   height: 100%;
@@ -22,14 +37,13 @@
   flex-direction: column;
 }
 
-.uvod-hlavicka {
-  flex: 0;
-  border: 1px solid red;
-}
-
 .uvod-text {
   border: 1px solid blue;
   flex: 1;
+  font-size: 2.1vw;
+  color: darkgreen;
+  text-align: center;
+  margin: 100px 100px;
 }
 .uvod-skupiny {
   border: 1px solid black;
@@ -41,9 +55,16 @@
 .uvod-karta {
   border: 1px solid fuchsia;
   flex: 1;
+  text-align: center;
+  flex-basis: 10%;
+  margin: 30px;
 }
 
 .uvod-paticka {
   border: 1px solid orangered;
   flex: 0;
+  text-align: center;
+  font-size: 12px;
+  color: darkgreen;
+  background-color: palegreen;
 }
