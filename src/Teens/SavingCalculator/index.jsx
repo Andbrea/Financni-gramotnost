@@ -12,12 +12,15 @@ const SavingCalculator = () => {
 
     const calculateMonthlyAmmount = () => {
         setAmmountLeft(goal - ammountNow);
-        if (years) {
+
+        if (months && years) {
+            const monthsTotal = years * 12 + months;
+            console.log(years * 12 + months);
+            setMonthlyPay((goal - ammountNow) / monthsTotal);
+        } else if (years) {
             setMonthlyPay((goal - ammountNow) / years / 12);
         } else if (months) {
             setMonthlyPay((goal - ammountNow) / months);
-        } else {
-            setMonthlyAmmount((goal - ammountNow) / years);
         }
     };
 
@@ -30,7 +33,7 @@ const SavingCalculator = () => {
                         <input
                             value={goal}
                             onChange={(event) => {
-                                setGoal(event.target.value);
+                                setGoal(Number(event.target.value));
                             }}
                             type="text"
                         />
@@ -43,7 +46,7 @@ const SavingCalculator = () => {
                         <input
                             value={ammountNow}
                             onChange={(event) => {
-                                setAmmountNow(event.target.value);
+                                setAmmountNow(Number(event.target.value));
                             }}
                             type="text"
                         />
@@ -67,7 +70,7 @@ const SavingCalculator = () => {
                         <input
                             value={years}
                             onChange={(event) => {
-                                setYears(event.target.value);
+                                setYears(Number(event.target.value));
                             }}
                             type="text"
                         />
@@ -75,9 +78,9 @@ const SavingCalculator = () => {
                         <input
                             value={months}
                             onChange={(event) => {
-                                setMonths(event.target.value);
+                                setMonths(Number(event.target.value));
                             }}
-                            type="text"
+                            type="number"
                         />
                         měsíců
                     </label>
