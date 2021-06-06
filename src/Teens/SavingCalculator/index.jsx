@@ -27,12 +27,14 @@ const SavingCalculator = () => {
                 {goal} Kč a mohl si koupit vysněnou věc.
             </>,
         );
-
-        console.log(result);
     };
 
     useEffect(() => {
-        setAmmountLeft(goal - ammountNow);
+        if (goal && ammountNow) {
+            setAmmountLeft(goal - ammountNow);
+        } else {
+            setAmmountLeft('');
+        }
     }, [goal, ammountNow]);
 
     return (
@@ -69,7 +71,7 @@ const SavingCalculator = () => {
                         Kolik ještě potřebuji
                         <input
                             disabled={true}
-                            value={Number(ammountLeft)}
+                            value={ammountNow === 0 ? goal : ammountLeft}
                             type="number"
                         />
                         Kč
