@@ -28,5 +28,6 @@ body {
 }
 .menu:hover,
 .menu:focus {
-  background-color: cornsilk;
+  background-color: transparent;
+  transition: background-color 500ms ease-out;
 }
