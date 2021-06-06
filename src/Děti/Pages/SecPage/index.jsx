@@ -14,9 +14,10 @@ const BoxImage = ({img, text}) => {
 
 
 const SecPage = () => {
+
 return (
 <>
-<div className="moneyImages">
+<div /* onClick={handleChange ? "moneyImages" : "moneyImages" "moneyImages--flip"}  */className="moneyImages">
       <BoxImage 
         img={home}
         text={"Aby jsi mohl kde bydlet"}
