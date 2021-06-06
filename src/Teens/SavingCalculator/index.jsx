@@ -1,28 +1,39 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.css';
 
 const SavingCalculator = () => {
-    const [goal, setGoal] = useState(1000);
-    const [ammountNow, setAmmountNow] = useState(100);
+    const [goal, setGoal] = useState('');
+    const [ammountNow, setAmmountNow] = useState('');
     const [ammountLeft, setAmmountLeft] = useState('');
 
     const [years, setYears] = useState('');
     const [months, setMonths] = useState('');
-    const [monthlyPay, setMonthlyPay] = useState(0);
+    const [result, setResult] = useState('');
 
     const calculateMonthlyAmmount = () => {
-        setAmmountLeft(goal - ammountNow);
-
+        let localMonthlyPay = 0;
         if (months && years) {
             const monthsTotal = years * 12 + months;
-            console.log(years * 12 + months);
-            setMonthlyPay((goal - ammountNow) / monthsTotal);
+            localMonthlyPay = (goal - ammountNow) / monthsTotal;
         } else if (years) {
-            setMonthlyPay((goal - ammountNow) / years / 12);
+            localMonthlyPay = (goal - ammountNow) / years / 12;
         } else if (months) {
-            setMonthlyPay((goal - ammountNow) / months);
+            localMonthlyPay = (goal - ammountNow) / months;
         }
+        setResult(
+            <>
+                Musíš odložit <strong>{localMonthlyPay.toFixed(2)} Kč</strong>{' '}
+                měsíčně po dobu {years * 12 + months} měsíců, aby sis našetřil{' '}
+                {goal} Kč a mohl si koupit vysněnou věc.
+            </>,
+        );
+
+        console.log(result);
     };
+
+    useEffect(() => {
+        setAmmountLeft(goal - ammountNow);
+    }, [goal, ammountNow]);
 
     return (
         <>
@@ -35,7 +46,7 @@ const SavingCalculator = () => {
                             onChange={(event) => {
                                 setGoal(Number(event.target.value));
                             }}
-                            type="text"
+                            type="number"
                         />
                         Kč
                     </label>
@@ -48,7 +59,7 @@ const SavingCalculator = () => {
                             onChange={(event) => {
                                 setAmmountNow(Number(event.target.value));
                             }}
-                            type="text"
+                            type="number"
                         />
                         Kč
                     </label>
@@ -58,8 +69,8 @@ const SavingCalculator = () => {
                         Kolik ještě potřebuji
                         <input
                             disabled={true}
-                            value={ammountLeft}
-                            type="text"
+                            value={Number(ammountLeft)}
+                            type="number"
                         />
                         Kč
                     </label>
@@ -72,7 +83,7 @@ const SavingCalculator = () => {
                             onChange={(event) => {
                                 setYears(Number(event.target.value));
                             }}
-                            type="text"
+                            type="number"
                         />
                         let
                         <input
@@ -87,12 +98,7 @@ const SavingCalculator = () => {
                 </span>
                 <button onClick={calculateMonthlyAmmount}>Spočítej</button>
 
-                <div>
-                    {' '}
-                    Musíš odložit {monthlyPay}
-                    Kč měsíčně, aby sis našetřil {goal} Kč a mohl si koupit
-                    vysněnou věc.
-                </div>
+                <div>{result}</div>
             </div>
         </>
     );
