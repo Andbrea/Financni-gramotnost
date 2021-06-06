@@ -8,6 +8,7 @@ const Home = () => {
     <>
       <div className="uvod-box">
         <div className="uvod-hlavicka">
+          <img src="assets/img/lista.svg" />
           <div className="uvod-header"> </div>
           <div className="uvod-nadpis">FINANČNÍ GRAMOTNOST</div>
           <div className="uvod-podnadpis">S penězi si poradím!</div>
