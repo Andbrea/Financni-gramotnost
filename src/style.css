@@ -23,7 +23,8 @@ body {
   display: inline-block;
   text-decoration: none;
   color: black;
-  background-color: rgb(159, 229, 247);
+  /*background-color: rgb(159, 229, 247);*/
+  background-color: #CCFF99;
   width: 100%;
 }
 .menu:hover,
