@@ -19,11 +19,13 @@ const Děti = () => {
     <>
       <div>
         <Switch>
-          <Route exact path="/deti/minceabankovky">
+          <Route exact path="/deti">
+            <Redirect to="/deti/minceabankovky" />
+          </Route>
+          <Route path="/deti/minceabankovky">
             <Page title="Mince a bankovky" />
             <FirstPage />
           </Route>
-          <Route path="/deti/minceabankovky"></Route>
           <Route path="/deti/kcemuslouzipenize">
             <SecPage />
           </Route>

@@ -22,7 +22,7 @@ const Home = () => {
           <div className="uvod-karta">
             <Karta
               title="Děti"
-              to="/deti/minceabankovky"
+              to="/deti"
               cesta="/assets/img/KidsColor.svg"
               zoom="50%"
             />

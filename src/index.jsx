@@ -22,7 +22,7 @@ const App = () => {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/deti/minceabankovky">
+          <Route path="/deti">
             <PageLayout
               title="Děti"
               links={
