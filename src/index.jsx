@@ -48,11 +48,49 @@ const App = () => {
               <Děti />
             </PageLayout>
           </Route>
+
+
           <Route path="/dospeli">
-            <PageLayout>
+            <PageLayout
+                /* title="Finanční gramotnost pro dospělé"*/
+                 links={
+                   <>
+                     <Link className="navigation-link" to="/dospeli/bankovkyamince">
+                       Bankovky a mince
+                     </Link>
+                     <Link className="navigation-link" to="/dospeli/banka">
+                       Banka
+                     </Link>
+                     <Link className="navigation-link" to="/dospeli/vyplataacoobsahuje">
+                       Výplata a co obsahuje
+                     </Link>
+                     <Link
+                       className="navigation-link"
+                       to="/dospeli/bankovniucet"
+                     >
+                       Bankovní účet
+                     </Link>
+                     <Link
+                       className="navigation-link"
+                       to="/dospeli/platebnikarta"
+                     >
+                       Platební karta
+                     </Link>
+                     <Link
+                       className="navigation-link"
+                       to="/dospeli/reklamaapravda"
+                     >
+                       Reklama a pravda
+                     </Link>
+                   </>
+                 }            
+            >
               <Dospělí />
             </PageLayout>
           </Route>
+
+
+
           <Route path="/teenageri">
             <PageLayout
               title="Teenageři"
