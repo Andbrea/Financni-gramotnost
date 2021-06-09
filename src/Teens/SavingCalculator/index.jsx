@@ -39,73 +39,80 @@ const SavingCalculator = () => {
 
     return (
         <>
-            <div className="calculator-box">
-                <span className="input-calc">
-                    <label>
-                        Kolik chci našetřit
-                        <input
-                            value={goal}
-                            onChange={(event) => {
-                                setGoal(Number(event.target.value));
-                            }}
-                            type="number"
-                        />
-                        Kč
-                    </label>
-                </span>
-                <span className="input-calc">
-                    <label>
-                        Kolik už mám našetřeno
-                        <input
-                            value={ammountNow}
-                            onChange={(event) => {
-                                setAmmountNow(Number(event.target.value));
-                            }}
-                            type="number"
-                        />
-                        Kč
-                    </label>
-                </span>
-                <span className="input-calc">
-                    <label>
-                        Kolik ještě potřebuji
-                        <input
-                            disabled={true}
-                            value={ammountNow === 0 ? goal : ammountLeft}
-                            type="number"
-                        />
-                        Kč
-                    </label>
-                </span>
-                <span className="input-calc">
-                    <label>
-                        Jak dlouho chci šetřit
-                        <input
-                            value={years}
-                            onChange={(event) => {
-                                setYears(Number(event.target.value));
-                            }}
-                            type="number"
-                        />
-                        let
-                        <input
-                            value={months}
-                            onChange={(event) => {
-                                setMonths(Number(event.target.value));
-                            }}
-                            type="number"
-                        />
-                        měsíců
-                    </label>
-                    <button
-                        className="button-count"
-                        onClick={calculateMonthlyAmmount}
-                    >
-                        Spočítej
-                    </button>
-                </span>
+            <div className="calculator">
+                <div className="calculator-box">
+                    <div className="field-box">
+                        <p className="field-title">
+                            <strong>Kolik chci</strong>
+                        </p>
+                        <p className="field-input">
+                            <input
+                                value={goal}
+                                onChange={(event) => {
+                                    setGoal(Number(event.target.value));
+                                }}
+                                type="number"
+                            />
+                            &nbsp;Kč
+                        </p>
+                    </div>
+                    <div className="field-box">
+                        <p className="field-title">Kolik už mám našetřeno</p>
+                        <p className="field-input">
+                            <input
+                                value={ammountNow}
+                                onChange={(event) => {
+                                    setAmmountNow(Number(event.target.value));
+                                }}
+                                type="number"
+                            />
+                            &nbsp;Kč
+                        </p>
+                    </div>
+                    <div className="field-box">
+                        <p className="field-title">Kolik ještě potřebuji</p>
+                        <p className="field-input">
+                            <input
+                                disabled={true}
+                                value={ammountNow === 0 ? goal : ammountLeft}
+                                type="number"
+                            />
+                            &nbsp;Kč
+                        </p>
+                    </div>
+                    <div className="field-box">
+                        <p className="field-title">Jak dlouho chci šetřit</p>
+                        <p className="field-input">
+                            <span className="lastRow-mb">
+                                <input
+                                    value={years}
+                                    onChange={(event) => {
+                                        setYears(Number(event.target.value));
+                                    }}
+                                    type="number"
+                                />
+                                &nbsp;let
+                            </span>
+                            <br />
+                            <input
+                                value={months}
+                                onChange={(event) => {
+                                    setMonths(Number(event.target.value));
+                                }}
+                                type="number"
+                            />
+                            &nbsp;měsíců
+                        </p>
+                    </div>
+                </div>
+                <button
+                    className="button-count"
+                    onClick={calculateMonthlyAmmount}
+                >
+                    Spočítej
+                </button>
 
-                <div>{result}</div>
+                <div className="calc-result">{result}</div>
             </div>
         </>
     );
