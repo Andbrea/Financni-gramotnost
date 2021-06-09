@@ -5,12 +5,12 @@ import './style.css';
 const Karta = ({ title, to, cesta, zoom }) => {
   return (
     <>
-      <div className="karta">
+      <div className="karta"><Link className="menu" to={to}>
         <div className="postavy">
           <div className="volnemisto"></div>
-          <img src={cesta} style={{ width: zoom }} />
+          <img src={cesta} style={{ height: zoom }} />
         </div>
-        <Link className="menu" to={to}>
+        
           {title}
         </Link>
       </div>

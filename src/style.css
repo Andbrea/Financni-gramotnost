@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #ffff99;
   height: 100%;
 }
@@ -23,9 +23,12 @@ body {
   display: inline-block;
   text-decoration: none;
   color: black;
-  background-color: rgb(159, 229, 247);
+  /*background-color: rgb(159, 229, 247);*/
+  background-color: #CCFF99;
+  width: 100%;
 }
 .menu:hover,
 .menu:focus {
-  background-color: cornsilk;
+  background-color: transparent;
+  transition: background-color 500ms ease-out;
 }
