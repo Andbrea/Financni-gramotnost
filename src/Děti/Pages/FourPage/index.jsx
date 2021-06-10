@@ -14,11 +14,12 @@ export class FourPage extends React.Component {
   handleSubmit = () => {
     const vysledek = Array.from(this.myRef.children).map((item) => item.id);
     console.log(vysledek);
+
     for (let i = 0; i < items.length; i++) {
       if (vysledek[i] === items[i]) {
         console.log(vysledek[i]);
       } else {
-        console.log("nerovnaji");
+        console.log("nerovna se");
       }
     }
   };

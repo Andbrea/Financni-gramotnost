@@ -12,26 +12,55 @@ const BoxImage = ({ img, text }) => {
   );
 };
 
+const FlipCard = ({ img, text }) => {
+  return (
+    <div className="flip-card">
+      <div className="flip-card-inner">
+        <div className="flip-card-front">
+          <img className="flipImage" src={img} />
+        </div>
+        <div className="flip-card-back">
+          <p>{text}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 const SecPage = () => {
   return (
     <>
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <BoxImage img={home} />
-          </div>
-          <div className="flip-card-back"></div>
-          <BoxImage text={"Za peníze máš kde bydlet"} />
+      <div className="cardList">
+        <div className="flip-Card-Wrap">
+          <FlipCard img={home} text={'"Za peníze máš kde bydlet"'} />
         </div>
-      </div>
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <BoxImage img={groceries} />
-          </div>
-          <div className="flip-card-back"></div>
-          <BoxImage text={"Za peníze si pořídíš jídlo"} />
+        <div className="flip-Card-Wrap">
+          <FlipCard
+            img={groceries}
+            text={'"Za peníze si můžeš koupit jídlo"'}
+          />
         </div>
+        {/*  <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img className="flipImage" src={home} />
+              </div>
+              <div className="flip-card-back">
+                <p>"Za peníze máš kde bydlet" </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flip-Card-Wrap">
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img className="flipImage" src={groceries} />
+              </div>
+              <div className="flip-card-back">
+                <p>"Za peníze si pořídíš jídlo"</p>
+              </div>
+            </div>
+          </div> */}
       </div>
     </>
   );

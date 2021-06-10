@@ -1,11 +1,17 @@
 body {
   background: #f7f6e2;
 }
-
+.cardList {
+  display: flex;
+}
+.flip-Card-Wrap {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   perspective: 1000px;
 }
 
@@ -31,15 +37,21 @@ body {
 }
 
 .flip-card-front {
-  background-color: red;
+  background-color: #ffffff;
   color: black;
 }
 
 .flip-card-back {
+  display: flex;
+  align-items: center;
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+  padding: 15px;
+  font-size: 0.875rem;
 }
-.flipImage{
-  
+.flipImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
