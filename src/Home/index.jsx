@@ -2,13 +2,15 @@ import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import Karta from "./Karta";
+import lista from "./img/castListy.svg";
+import dots from "./img/dots.svg";
 
 const Home = () => {
   return (
     <>
       <div className="uvod-box">
         <div className="uvod-hlavicka">
-          <img src="assets/img/lista.svg" />
+          <img src={lista} />
           <div className="uvod-header"> </div>
           <div className="uvod-nadpis">FINANČNÍ GRAMOTNOST</div>
           <div className="uvod-podnadpis">S penězi si poradím!</div>
@@ -44,8 +46,12 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="uvod-paticka">
+        {/*         <div className="uvod-paticka">
           2021, Andrea Bravencová, Iveta Vrobelová, Jitka Ševčíková{" "}
+        </div> */}
+        <div className="footer padd">
+          © 2021, Andrea Bravencová, Iveta Vrobelová, Jitka Ševčíková, projekt
+          byl vytvořen v rámci DA Czechitas
         </div>
       </div>
     </>

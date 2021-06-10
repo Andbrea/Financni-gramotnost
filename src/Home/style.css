@@ -29,26 +29,28 @@
   text-align: center;
   position: absolute;
   width: 100%;
-  top: 70%;
+  top: 60%;
 }
 
 .uvod-box {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /*   justify-content: space-between; */
 }
 
 .uvod-text {
   /*border: 1px solid blue;*/
   flex: 0;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   color: darkgreen;
   text-align: center;
   margin: 0 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 .uvod-skupiny {
- /* border: 1px solid black;*/
+  /* border: 1px solid black;*/
   flex: 0;
   display: flex;
   flex-direction: row;
@@ -60,18 +62,18 @@
 }
 
 .uvod-karta {
- /* border: 1px solid fuchsia;*/
+  /* border: 1px solid fuchsia;*/
   flex: 1;
   text-align: center;
   flex-basis: 10%;
 }
 
 .uvod-paticka {
- /* border: 1px solid orangered;*/
+  /* border: 1px solid orangered;*/
   flex: 0;
   text-align: center;
   font-size: 1.3vw;
-  color:darkgreen;
+  color: darkgreen;
   background-color: rgb(143, 227, 173);
 }
 

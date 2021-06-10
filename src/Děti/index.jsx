@@ -23,7 +23,6 @@ const Děti = () => {
             <Redirect to="/deti/minceabankovky" />
           </Route>
           <Route path="/deti/minceabankovky">
-            <Page title="Mince a bankovky" />
             <FirstPage />
           </Route>
           <Route path="/deti/kcemuslouzipenize">

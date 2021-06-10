@@ -24,6 +24,7 @@ const MoneyBox = ({ img, text }) => {
 const FirstPage = () => {
   return (
     <>
+      <h2 className="titleCoins">Mince a bankovky</h2>
       <div className="moneyCoins">
         <MoneyBox img={koruna} text={"Jedna koruna"} />
         <MoneyBox img={dveKoruna} text={"Dvě koruny"} />

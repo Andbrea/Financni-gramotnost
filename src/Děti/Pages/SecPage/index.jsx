@@ -5,10 +5,10 @@ import groceries from "./img/groceries.png";
 
 const BoxImage = ({ img, text }) => {
   return (
-    <div className="boxImage">
-      <img className="box-img" src={img} alt="images" />
-      <p className="flipText">{text}</p>
-    </div>
+    <>
+      <img className="flipImage" src={img} alt="images" />
+      <p> {text}</p>
+    </>
   );
 };
 
@@ -19,9 +19,17 @@ const SecPage = () => {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <BoxImage img={home} />
+          </div>
+          <div className="flip-card-back"></div>
+          <BoxImage text={"Za peníze máš kde bydlet"} />
+        </div>
+      </div>
+      <div className="flip-card">
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
             <BoxImage img={groceries} />
           </div>
-          <div class="flip-card-back"></div>
+          <div className="flip-card-back"></div>
           <BoxImage text={"Za peníze si pořídíš jídlo"} />
         </div>
       </div>
