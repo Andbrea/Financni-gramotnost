@@ -3,6 +3,8 @@ import "./style.css";
 import * as ReactDOM from "react-dom";
 import Dragula from "react-dragula";
 
+const items = ["auto", "pocitac", "chleba", "lizatko"];
+
 export class FourPage extends React.Component {
   constructor(props) {
     super(props);
@@ -10,10 +12,17 @@ export class FourPage extends React.Component {
     this.state = { color: "" };
   }
   handleSubmit = () => {
-    const vysledek = Array.from(this.myRef.children).map(
-      (item) => item.className
-    );
+    const vysledek = Array.from(this.myRef.children).map((item) => item.id);
+    console.log(vysledek);
+    for (let i = 0; i < items.length; i++) {
+      if (vysledek[i] === items[i]) {
+        console.log(vysledek[i]);
+      } else {
+        console.log("nerovnaji");
+      }
+    }
   };
+
   render() {
     console.log("aaa");
     return (
@@ -28,10 +37,18 @@ export class FourPage extends React.Component {
           className={"boxes"}
           ref={this.dragulaDecorator}
         >
-          <div className="box chleba">Chleba</div>
-          <div className="box lizatko">Lízátko</div>
-          <div className="box pocitac">Počítač</div>
-          <div className="box auto">Auto</div>
+          <div id="chleba" className="box chleba">
+            Chleba
+          </div>
+          <div id="lizatko" className="box lizatko">
+            Lízátko
+          </div>
+          <div id="pocitac" className="box pocitac">
+            Počítač
+          </div>
+          <div id="auto" className="box auto">
+            Auto
+          </div>
         </div>
         <button className="btnElm" onClick={this.handleSubmit}>
           Vyhodnotit
