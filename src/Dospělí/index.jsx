@@ -4,10 +4,10 @@ import Str from './Str';
 import './style.css';
 
 const Dospělí = () => {
-return (
-<>
-<Switch>
-                <Route exact path="/dospeli/bankovkyamince">
+    return (
+        <>
+            <Switch>
+                <Route exact={true} path="/dospeli">
                     <Str
                         title="Bankovky a mince"
                         path="../../assets/img/Adults.svg"
@@ -16,35 +16,19 @@ return (
                     />
                 </Route>
                 <Route path="/dospeli/banka">
-                    <Str
-                        title="Banka"
-                        text="Psaný text"
-                    />
+                    <Str title="Banka" text="Psaný text" />
                 </Route>
                 <Route path="/dospeli/vyplataacoobsahuje">
-                    <Str
-                        title="Výplata a co obsahuje"
-                        text="Další odstavec."
-                    />
+                    <Str title="Výplata a co obsahuje" text="Další odstavec." />
                 </Route>
                 <Route path="/dospeli/bankovniucet">
-                    <Str
-                        title="Bankovní účet"
-                        text="Další obsah."
-                    />
+                    <Str title="Bankovní účet" text="Další obsah." />
                 </Route>
                 <Route path="/dospeli/platebnikarta">
-                    <Str
-                        title="Platební karta"
-                        text="Sem dám něco"
-                    />
+                    <Str title="Platební karta" text="Sem dám něco" />
                 </Route>
                 <Route path="/dospeli/reklamaapravda">
-                    <Str 
-                    title="Reklamy a pravda"
-                        text="Místo pro textík"
-                        
-                        />
+                    <Str title="Reklamy a pravda" text="Místo pro textík" />
                 </Route>
             </Switch>
         </>
@@ -52,11 +36,3 @@ return (
 };
 
 export default Dospělí;
-
-
-
-
-
-
-
-            

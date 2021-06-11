@@ -6,6 +6,7 @@ import {
     Switch,
     Route,
     Link,
+    NavLink,
     useParams,
 } from 'react-router-dom';
 import Děti from './Děti';
@@ -27,30 +28,35 @@ const App = () => {
                             title="Děti"
                             links={
                                 <>
-                                    <Link
+                                    <NavLink
                                         className="navigation-link"
+                                        activeClassName="selected"
                                         to="/deti/minceabankovky"
+                                        exact={true}
                                     >
                                         Mince a Bankovky
-                                    </Link>
-                                    <Link
+                                    </NavLink>
+                                    <NavLink
                                         className="navigation-link"
+                                        activeClassName="selected"
                                         to="/deti/kcemuslouzipenize"
                                     >
                                         K čemu slouží peníze
-                                    </Link>
-                                    <Link
+                                    </NavLink>
+                                    <NavLink
                                         className="navigation-link"
+                                        activeClassName="selected"
                                         to="/deti/platebnikarta"
                                     >
                                         Platební karta
-                                    </Link>
-                                    <Link
+                                    </NavLink>
+                                    <NavLink
                                         className="navigation-link"
+                                        activeClassName="selected"
                                         to="/deti/kviz"
                                     >
                                         Kvíz
-                                    </Link>
+                                    </NavLink>
                                 </>
                             }
                         >
@@ -63,42 +69,49 @@ const App = () => {
                             /* title="Finanční gramotnost pro dospělé"*/
                             links={
                                 <>
-                                    <Link
+                                    <NavLink
                                         className="navigation-link"
-                                        to="/dospeli/bankovkyamince"
+                                        activeClassName="selected"
+                                        to="/dospeli"
+                                        exact={true}
                                     >
                                         Bankovky a mince
-                                    </Link>
-                                    <Link
+                                    </NavLink>
+                                    <NavLink
                                         className="navigation-link"
+                                        activeClassName="selected"
                                         to="/dospeli/banka"
                                     >
                                         Banka
-                                    </Link>
-                                    <Link
+                                    </NavLink>
+                                    <NavLink
                                         className="navigation-link"
+                                        activeClassName="selected"
                                         to="/dospeli/vyplataacoobsahuje"
                                     >
                                         Výplata a co obsahuje
-                                    </Link>
-                                    <Link
+                                    </NavLink>
+                                    <NavLink
                                         className="navigation-link"
+                                        activeClassName="selected"
                                         to="/dospeli/bankovniucet"
                                     >
                                         Bankovní účet
-                                    </Link>
-                                    <Link
+                                    </NavLink>
+                                    <NavLink
                                         className="navigation-link"
+                                        activeClassName="selected"
                                         to="/dospeli/platebnikarta"
                                     >
                                         Platební karta
-                                    </Link>
-                                    <Link
+                                    </NavLink>
+                                    <NavLink
                                         className="navigation-link"
+                                        activeClassName="selected"
                                         to="/dospeli/reklamaapravda"
                                     >
                                         Reklama a pravda
-                                    </Link>
+                                    </NavLink>
                                 </>
                             }
                         >
@@ -111,42 +124,49 @@ const App = () => {
                             title="FINANČNÍ GRAMOTNOST Teenageři"
                             links={
                                 <>
-                                    <Link
+                                    <NavLink
                                         className="navigation-link"
+                                        activeClassName="selected"
                                         to="/teenageri"
+                                        exact={true}
                                     >
                                         Potřebuji vs chci
-                                    </Link>
-                                    <Link
+                                    </NavLink>
+                                    <NavLink
                                         className="navigation-link"
+                                        activeClassName="selected"
                                         to="/teenageri/zdrojpenez"
                                     >
                                         Zdroj peněz
-                                    </Link>
-                                    <Link
+                                    </NavLink>
+                                    <NavLink
                                         className="navigation-link"
+                                        activeClassName="selected"
                                         to="/teenageri/sporeni"
                                     >
                                         Spoření
-                                    </Link>
-                                    <Link
+                                    </NavLink>
+                                    <NavLink
                                         className="navigation-link"
+                                        activeClassName="selected"
                                         to="/teenageri/bankovniucet"
                                     >
                                         Bankovní účet
-                                    </Link>
-                                    <Link
+                                    </NavLink>
+                                    <NavLink
                                         className="navigation-link"
+                                        activeClassName="selected"
                                         to="/teenageri/platebnikarta"
                                     >
                                         Platební karta
-                                    </Link>
-                                    <Link
+                                    </NavLink>
+                                    <NavLink
                                         className="navigation-link"
+                                        activeClassName="selected"
                                         to="/teenageri/sporicikalkulacka"
                                     >
                                         Spořicí kalkulačka
-                                    </Link>
+                                    </NavLink>
                                 </>
                             }
                         >

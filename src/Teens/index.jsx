@@ -8,7 +8,7 @@ const Teens = () => {
     return (
         <>
             <Switch>
-                <Route exact path="/teenageri">
+                <Route exact={true} path="/teenageri">
                     <Page
                         title="Potřebuji versus chci"
                         path="../../assets/img/Adults.svg"

@@ -27,11 +27,17 @@
 }
 .home {
     position: fixed;
-    left: 20px;
+    left: 10px;
     top: 10px;
     text-decoration: none;
-    border: 1px solid red;
+
+    padding: 5px 10px;
     color: black;
+    font-weight: bold;
+}
+
+.home:hover {
+    background-color: #ccff99;
 }
 
 .footer {
@@ -68,10 +74,14 @@
 .navigation-link {
     text-decoration: none;
     padding: 5px 10px;
-    padding-left: 10px;
     color: black;
 }
 .navigation-link:hover {
+    background-color: #ccff99;
+    font-weight: bold;
+}
+
+.selected {
     background-color: #ccff99;
     font-weight: bold;
 }
