@@ -1,94 +1,92 @@
 .uvod-hlavicka {
-  /*background: url('../assets/img/lista.svg');*/
-  background-size: cover;
-  flex: 0;
-  /*border: 1px solid red;*/
-  text-align: center;
-  position: relative;
+    /*background: url('../assets/img/lista.svg');*/
+    background-size: cover;
+    flex: 0;
+    /*border: 1px solid red;*/
+    text-align: center;
+    position: relative;
 }
 
 .uvod-hlavicka img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .uvod-nadpis {
-  font-size: 4.8vw;
-  font-weight: bold;
-  color: darkgreen;
-  text-align: center;
-  top: 20%;
-  width: 100%;
-  position: absolute;
+    font-size: 4.8vw;
+    font-weight: bold;
+    color: darkgreen;
+    text-align: center;
+    top: 20%;
+    width: 100%;
+    position: absolute;
 }
 
 .uvod-podnadpis {
-  font-size: 2.4vw;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 60%;
+    font-size: 2.4vw;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 60%;
 }
 
 .uvod-box {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  /*   justify-content: space-between; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /*   justify-content: space-between; */
 }
 
 .uvod-text {
-  /*border: 1px solid blue;*/
-  flex: 0;
-  font-size: 1.5vw;
-  color: darkgreen;
-  text-align: center;
-  margin: 0 4%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+    flex: 0;
+    font-size: 1.5vw;
+    color: darkgreen;
+    text-align: center;
+    margin: 0 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 .uvod-skupiny {
-  /* border: 1px solid black;*/
-  flex: 0;
-  display: flex;
-  flex-direction: row;
-  margin-left: 8%;
-  margin-right: 8%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 60px;
+    flex: 0;
+    display: flex;
+    flex-direction: row;
+    margin-left: 8%;
+    margin-right: 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 60px;
 }
 
 .uvod-karta {
-  /* border: 1px solid fuchsia;*/
-  flex: 1;
-  text-align: center;
-  flex-basis: 10%;
+    /* border: 1px solid fuchsia;*/
+    flex: 1;
+    text-align: center;
+    flex-basis: 10%;
 }
 
 .uvod-paticka {
-  /* border: 1px solid orangered;*/
-  flex: 0;
-  text-align: center;
-  font-size: 1.3vw;
-  color: darkgreen;
-  background-color: rgb(143, 227, 173);
+    /* border: 1px solid orangered;*/
+    flex: 0;
+    text-align: center;
+    font-size: 1.3vw;
+    color: darkgreen;
+    background-color: rgb(143, 227, 173);
 }
 
 .volnemisto {
-  flex: 1;
+    flex: 1;
 }
 
 .postavy img {
-  position: relative;
-  margin: 0 auto 10% auto;
+    position: relative;
+    margin: 0 auto 10% auto;
 }
 
 .postavy {
-  display: flex;
-  flex-direction: column;
-  height: 20vw;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 20vw;
+    text-align: center;
 }

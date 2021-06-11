@@ -4,12 +4,13 @@
     right: 0;
     top: 50px;
     bottom: 20px;
-    padding: 50px;
+    padding: 20px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+
+    min-width: 500px;
+    min-height: 500px;
 }
 .header {
     background-color: #98cfa5;
@@ -21,12 +22,16 @@
     text-align: center;
     height: 50px;
 }
-
+.header-title {
+    margin: 0;
+}
 .home {
     position: fixed;
-    left: 10px;
+    left: 20px;
     top: 10px;
     text-decoration: none;
+    border: 1px solid red;
+    color: black;
 }
 
 .footer {
@@ -46,21 +51,27 @@
 
 .navigation {
     position: fixed;
-
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
 
-    padding-top: 20px;
+    /* padding-top: 20px; */
 
     left: 0;
     right: 0;
     top: 50px;
     bottom: 20px;
     width: 200px;
-    border: 1px solid red;
+    border-right: 10px solid #98cfa5;
+    border-left: 10px solid #98cfa5;
 }
 
 .navigation-link {
     text-decoration: none;
+    padding: 5px 10px;
+    padding-left: 10px;
+    color: black;
+}
+.navigation-link:hover {
+    background-color: #ccff99;
+    font-weight: bold;
 }

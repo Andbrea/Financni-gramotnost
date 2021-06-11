@@ -6,7 +6,7 @@ const PageLayout = ({ children, title, links }) => {
     return (
         <>
             <div className="header">
-                {title}
+                <h3 className="header-title">{title}</h3>
                 <Link className="home" to="/">
                     Domů
                 </Link>
