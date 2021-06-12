@@ -1,7 +1,6 @@
 .calculator {
-    background-color: rgb(204, 231, 238);
+    background-color: rgb(170 228 243 / 67%);
     width: 500px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,18 +55,17 @@ input[type='number']:disabled {
 
 .button-count {
     margin-top: 18px;
-    background-color: #98cfa5;
-    border: none;
-
+    border: 1px solid rgb(113, 137, 143);
     border-radius: 5px;
-    padding: 8px;
+    padding: 8px 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 16px;
-    color: white;
+    color: #265130;
 }
 .button-count:hover {
     cursor: pointer;
+    background-color: #98cfa5;
 }
 
 .calc-result {

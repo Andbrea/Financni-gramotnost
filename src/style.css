@@ -16,18 +16,5 @@ body {
 
 #app {
     height: 100%;
-}
-.menu {
-    padding: 10px;
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    /*background-color: rgb(159, 229, 247);*/
-    background-color: #ccff99;
-    width: 100%;
-}
-.menu:hover,
-.menu:focus {
-    background-color: transparent;
-    transition: background-color 500ms ease-out;
+    background-color: #f8fcf8;
 }
