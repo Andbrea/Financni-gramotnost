@@ -8,7 +8,8 @@ const PageLayout = ({ children, title, links }) => {
             <div className="header">
                 <div className="home-btn-box">
                     <Link className="home" to="/">
-                        Domů
+                        <img src="../../assets/img/home-icon.svg" alt="home" />
+                        <div>Domů</div>
                     </Link>
                 </div>
                 <div className="header-title-box">

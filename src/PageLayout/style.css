@@ -25,30 +25,38 @@
 }
 
 .home-btn-box {
-    flex-basis: 15%;
+    width: 200px;
 }
 
 .header-title-box {
-    flex-basis: 85%;
+    flex-basis: calc(100% - 200px);
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 545px) {
     .header {
-        width: 430px;
+        width: 545px;
     }
 }
 
 .home {
     text-decoration: none;
-
     padding: 5px 10px;
     color: #265130;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    margin: 0 50px;
+}
+
+.home img {
+    width: 1.25em;
+    margin-right: 4px;
 }
 
 .home:hover {
     background-color: #f8fcf8;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 
 .footer {
