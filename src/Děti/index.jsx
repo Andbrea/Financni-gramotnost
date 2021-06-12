@@ -17,7 +17,7 @@ import Page from "../Teens/Page/index";
 const Děti = () => {
   return (
     <>
-      <div>
+      <div className="kids-container">
         <Switch>
           <Route exact path="/deti">
             <Redirect to="/deti/minceabankovky" />
@@ -26,6 +26,10 @@ const Děti = () => {
             <FirstPage />
           </Route>
           <Route path="/deti/kcemuslouzipenize">
+            <Page
+              title="K čemu slouží peníze?"
+              text="Najeď myší na obrázek a dozvíš se to :)"
+            />
             <SecPage />
           </Route>
           <Route path="/deti/platebnikarta">

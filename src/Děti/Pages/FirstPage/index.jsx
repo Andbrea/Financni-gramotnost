@@ -11,6 +11,15 @@ import petset from "./img/bcsr2cz013.jpg";
 import tisic from "./img/2466.jpg";
 import dvatisice from "./img/2000CZK_obverse.jpg";
 import pettisic from "./img/5_000_czk_note_1999.jpg";
+import Pexeso from "./Pexeso/index";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useParams,
+  Redirect,
+} from "react-router-dom";
 
 const MoneyBox = ({ img, text }) => {
   return (
@@ -44,7 +53,15 @@ const FirstPage = () => {
       </div>
       <div className="introPexeso">
         <p>Myslíš, že je znáš všechny? Pojď si to vyzkoušet!</p>
-        <button>Hrát</button>
+
+        {/*         <Router>
+          <button>
+            Hrát
+            <Route path="deti/pexeso">
+              <Pexeso />
+            </Route>
+          </button>
+        </Router> */}
       </div>
     </>
   );

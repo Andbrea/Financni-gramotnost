@@ -2,6 +2,11 @@ import React from "react";
 import "./style.css";
 import home from "./img/HOME.png";
 import groceries from "./img/groceries.png";
+import games from "./img/games.png";
+import camera from "./img/Bez názvu-1.png";
+import excercise from "./img/excercise.png";
+import doctor from "./img/doctor.png";
+import hobbies from "./img/hobbies.png";
 
 const BoxImage = ({ img, text }) => {
   return (
@@ -39,28 +44,30 @@ const SecPage = () => {
             text={'"Za peníze si můžeš koupit jídlo"'}
           />
         </div>
-        {/*  <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img className="flipImage" src={home} />
-              </div>
-              <div className="flip-card-back">
-                <p>"Za peníze máš kde bydlet" </p>
-              </div>
-            </div>
-          </div>
+        <div className="flip-Card-Wrap">
+          <FlipCard img={games} text={'"Můžeš koupit si hry"'} />
         </div>
         <div className="flip-Card-Wrap">
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img className="flipImage" src={groceries} />
-              </div>
-              <div className="flip-card-back">
-                <p>"Za peníze si pořídíš jídlo"</p>
-              </div>
-            </div>
-          </div> */}
+          <FlipCard img={camera} text={'"Můžeš chodit do kina"'} />
+        </div>
+        <div className="flip-Card-Wrap">
+          <FlipCard
+            img={excercise}
+            text={'"Můžeš si koupit sešity do školy"'}
+          />
+        </div>
+        <div className="flip-Card-Wrap">
+          <FlipCard
+            img={doctor}
+            text={'"Za peníze si hradíš lékařskou péči"'}
+          />
+        </div>
+        <div className="flip-Card-Wrap">
+          <FlipCard
+            img={hobbies}
+            text={'"Můžeš se rozvíjet v tom, co tě baví!"'}
+          />
+        </div>
       </div>
     </>
   );
