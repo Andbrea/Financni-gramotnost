@@ -3,3 +3,9 @@
   padding: 20px;
   margin: 50px;
 }
+
+.bloky {
+  text-align: justify;
+  font-size: 1 vw;
+  color: darkgreen;
+}
