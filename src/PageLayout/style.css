@@ -20,14 +20,26 @@
     color: white;
     text-align: center;
     height: 50px;
+    display: flex;
+    align-items: center;
 }
+
+.home-btn-box {
+    flex-basis: 10%;
+}
+
+.header-title-box {
+    flex-basis: 90%;
+}
+
 .header-title {
     margin: 0;
 }
 .home {
-    position: fixed;
+    /* position: fixed;
     left: 10px;
-    top: 10px;
+    top: 10px; */
+
     text-decoration: none;
 
     padding: 5px 10px;
@@ -60,8 +72,6 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-
-    /* padding-top: 20px; */
 
     left: 0;
     right: 0;
