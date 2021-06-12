@@ -2,7 +2,6 @@
     /*background: url('../assets/img/lista.svg');*/
     background-size: cover;
     flex: 0;
-    /*border: 1px solid red;*/
     text-align: center;
     position: relative;
 }
@@ -15,7 +14,7 @@
 .uvod-nadpis {
     font-size: 4.8vw;
     font-weight: bold;
-    color: darkgreen;
+    color: #265130;
     text-align: center;
     top: 20%;
     width: 100%;
@@ -36,13 +35,12 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    /*   justify-content: space-between; */
 }
 
 .uvod-text {
     flex: 0;
     font-size: 1.5vw;
-    color: darkgreen;
+    color: #265130;
     text-align: center;
     margin: 0 4%;
     padding-top: 1%;
@@ -60,19 +58,9 @@
 }
 
 .uvod-karta {
-    /* border: 1px solid fuchsia;*/
     flex: 1;
     text-align: center;
     flex-basis: 10%;
-}
-
-.uvod-paticka {
-    /* border: 1px solid orangered;*/
-    flex: 0;
-    text-align: center;
-    font-size: 1.3vw;
-    color: darkgreen;
-    background-color: rgb(143, 227, 173);
 }
 
 .volnemisto {
@@ -89,4 +77,20 @@
     flex-direction: column;
     height: 20vw;
     text-align: center;
+}
+
+.menu {
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 5%;
+    background-color: rgb(170 228 243 / 67%);
+}
+.menu:hover,
+.menu:focus {
+    background-color: transparent;
+    transition: background-color 500ms ease-out;
 }

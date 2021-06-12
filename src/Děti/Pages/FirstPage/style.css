@@ -1,51 +1,66 @@
 .moneyBox {
-  display: flex;
-  flex-direction: row;
-  border-radius: 10%;
-  background-color: #ffff;
-  width: 220px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10%;
+    background-color: #ffff;
+    width: 220px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
 }
 .moneyCoins,
 .moneyCash,
 .bigMoney {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .moneyBox-Img {
-  height: 80px;
-  padding-left: 15px;
-  padding-right: 5px;
-  padding-top: 20px;
+    height: 80px;
+    padding-left: 15px;
+    padding-right: 5px;
+    padding-top: 20px;
 }
 .moneyCoins img {
-  padding-bottom: 5px;
+    padding-bottom: 5px;
 }
 .moneyCash img {
-  height: 75px;
-  padding-top: 10px;
+    height: 75px;
+    padding-top: 10px;
 }
 
 .bigMoney img {
-  height: 75px;
-  padding-top: 20px;
+    height: 75px;
+    padding-top: 20px;
 }
 .moneyBoxText {
-  display: flex;
-  flex-direction: column;
-  padding-top: 5px;
-  padding-left: 5px;
-  font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 0.9rem;
 }
 .introPexeso {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .titleCoins {
-  padding-left: 50px;
+    padding-left: 50px;
 }
+
+/* .btn {
+    border: 1px solid rgb(113, 137, 143);
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #265130;
+} */
+
+/* .btn:hover {
+    cursor: pointer;
+    background-color: rgb(170 228 243 / 67%);
+} */

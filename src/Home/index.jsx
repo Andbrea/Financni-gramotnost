@@ -47,9 +47,7 @@ const Home = () => {
                         />
                     </div>
                 </div>
-                {/*         <div className="uvod-paticka">
-          2021, Andrea Bravencová, Iveta Vrobelová, Jitka Ševčíková{" "}
-        </div> */}
+
                 <div className="footer padd">
                     © 2021, Andrea Bravencová, Iveta Vrobelová, Jitka Ševčíková,
                     projekt byl vytvořen v rámci DA Czechitas
