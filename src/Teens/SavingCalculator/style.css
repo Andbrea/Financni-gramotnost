@@ -55,7 +55,6 @@ input[type='number']:disabled {
 
 .button-count {
     margin-top: 18px;
-    /* background-color: #f8fcf8; */
     border: 1px solid rgb(113, 137, 143);
     border-radius: 5px;
     padding: 8px 16px;
