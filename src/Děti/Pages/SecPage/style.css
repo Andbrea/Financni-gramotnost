@@ -66,3 +66,8 @@ body {
   object-fit: contain;
   background-color: #ffffff;
 }
+.money-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
