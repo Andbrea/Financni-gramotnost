@@ -6,10 +6,17 @@ const PageLayout = ({ children, title, links }) => {
     return (
         <>
             <div className="header">
-                <h3 className="header-title">{title}</h3>
-                <Link className="home" to="/">
-                    Domů
-                </Link>
+                <div className="home-btn-box">
+                    <Link className="home" to="/">
+                        <img src="../../assets/img/home-icon.svg" alt="home" />
+                        <div>Domů</div>
+                    </Link>
+                </div>
+                <div className="header-title-box">
+                    <h3 className="header-title">
+                        FINANČNÍ GRAMOTNOST - {title}
+                    </h3>
+                </div>
             </div>
 
             <div className="navigation">{links}</div>

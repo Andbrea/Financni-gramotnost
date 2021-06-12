@@ -9,18 +9,21 @@ export class FourPage extends React.Component {
   constructor(props) {
     super(props);
     this.myRef = React.createRef();
-    this.state = { color: "" };
+    this.state = { color: "", showResult: "" };
   }
   handleSubmit = () => {
     const vysledek = Array.from(this.myRef.children).map((item) => item.id);
     console.log(vysledek);
-
+    let isCorrect = true;
     for (let i = 0; i < items.length; i++) {
-      if (vysledek[i] === items[i]) {
-        console.log(vysledek[i]);
-      } else {
-        console.log("nerovna se");
+      if (vysledek[i] !== items[i]) {
+        isCorrect = false;
       }
+    }
+    if (isCorrect) {
+      this.setState({ showResult: "Vse mas spravne" });
+    } else {
+      this.setState({ showResult: "Mas tam chybu, zkus to znovu" });
     }
   };
 
@@ -54,6 +57,7 @@ export class FourPage extends React.Component {
         <button className="btnElm" onClick={this.handleSubmit}>
           Vyhodnotit
         </button>
+        {this.state.showResult && <div>{this.state.showResult}</div>}
       </>
     );
   }

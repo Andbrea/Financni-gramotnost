@@ -5,12 +5,13 @@
 }
 .box,
 .boxes > div {
-    border: 1px solid black;
-    padding-left: 50px;
-    padding-right: 50px;
-    justify-content: space-between;
-    margin: 5px;
-    border-radius: 10px;
+  border: 1px solid black;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: space-between;
+  margin: 5px;
+  border-radius: 10px;
+  max-width: 300px;
 }
 .box:hover {
     background: red;

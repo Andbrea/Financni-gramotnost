@@ -1,14 +1,20 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import "./style.css";
 
-
-
-const Pexeso = () => {
-return (
-<>
-
-</>
-  )
+const CardsGrid = () => {
+  return (
+    <>
+      <div className="container-pexeso">
+        <div>
+          <div classname="singleCard"></div>
+        </div>
+      </div>
+    </>
+  );
 };
 
-export default Pexeso; 
+const Pexeso = () => {
+  return <></>;
+};
+
+export default Pexeso;

@@ -20,24 +20,43 @@
     color: white;
     text-align: center;
     height: 50px;
+    display: flex;
+    align-items: center;
 }
-.header-title {
-    margin: 0;
-}
-.home {
-    position: fixed;
-    left: 10px;
-    top: 10px;
-    text-decoration: none;
 
+.home-btn-box {
+    width: 200px;
+}
+
+.header-title-box {
+    flex-basis: calc(100% - 200px);
+}
+
+@media screen and (max-width: 545px) {
+    .header {
+        width: 545px;
+    }
+}
+
+.home {
+    text-decoration: none;
     padding: 5px 10px;
     color: #265130;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    margin: 0 50px;
+}
+
+.home img {
+    width: 1.25em;
+    margin-right: 4px;
 }
 
 .home:hover {
     background-color: #f8fcf8;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 
 .footer {
@@ -60,8 +79,6 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-
-    /* padding-top: 20px; */
 
     left: 0;
     right: 0;
