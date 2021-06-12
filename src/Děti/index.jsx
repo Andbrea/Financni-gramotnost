@@ -13,6 +13,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import Page from "../Teens/Page/index";
+import Pexeso from "./Pages/FirstPage/Pexeso";
 
 const Děti = () => {
   return (
@@ -24,6 +25,9 @@ const Děti = () => {
           </Route>
           <Route path="/deti/minceabankovky">
             <FirstPage />
+          </Route>
+          <Route path="/deti/pexeso">
+            <Pexeso />
           </Route>
           <Route path="/deti/kcemuslouzipenize">
             <SecPage />
