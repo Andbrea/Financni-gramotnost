@@ -18,7 +18,7 @@ const Home = () => {
                 <div className="uvod-text">
                     Vítejte na naši informační stránce, která Vás seznámí se
                     základními pojmy finanční problematiky. Pro další
-                    informace,klikněte na tlačítko pod obrázkem dle vlastního
+                    informace, klikněte na obrázek dle vlastního
                     výběru - děti, teenageři, dospělí.{' '}
                 </div>
                 <div className="uvod-skupiny">
