@@ -66,7 +66,7 @@ const App = () => {
 
                     <Route path="/dospeli">
                         <PageLayout
-                            /* title="Finanční gramotnost pro dospělé"*/
+                            title="Dospělí"
                             links={
                                 <>
                                     <NavLink
@@ -121,7 +121,7 @@ const App = () => {
 
                     <Route path="/teenageri">
                         <PageLayout
-                            title="FINANČNÍ GRAMOTNOST Teenageři"
+                            title="Teenageři"
                             links={
                                 <>
                                     <NavLink

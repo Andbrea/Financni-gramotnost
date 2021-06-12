@@ -25,12 +25,16 @@ const Teens = () => {
                 <Route path="/teenageri/sporeni">
                     <Page
                         title="Spoření"
+                        path="../../assets/img/Teens-img/saving.svg"
+                        altName="spoření"
                         text="Získané peníze utratím, nebo si je šetřím. Správně bych však nikdy neměl utrácet všechno, co vydělám. Vždy je dobré si část peněz nechat a šetřit si je – spořit na další věci."
                     />
                 </Route>
                 <Route path="/teenageri/bankovniucet">
                     <Page
                         title="Bankovní účet"
+                        path="../../assets/img/Teens-img/bank-account.svg"
+                        altName="bankovní účet"
                         text="S pomocí rodičů si mohu založit účet v bance, na kterém budu mít peníze uloženy. Nemusím je tak mít doma v pokladničce. Díky účtu budu mít lepší přehled o svých příjmech – peníze, které jsem obdržel, a výdajích – peníze, které jsem utratil. To vše díky internetovému bankovnictví. Tak mohu z domova peníze přijímat i posílat."
                     />
                 </Route>

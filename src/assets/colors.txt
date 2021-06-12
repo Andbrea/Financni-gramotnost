@@ -1,0 +1,4 @@
+Header, footer background-color: #98cfa5
+Header, footer text color: #265130 
+Body background-color: #f8fcf8
+highlighter: rgb(170 228 243 / 67%)
