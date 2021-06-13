@@ -1,3 +1,4 @@
 img.obrazecek {
-  width: auto;
+    display: flex;
+    width: 100%;
 }
