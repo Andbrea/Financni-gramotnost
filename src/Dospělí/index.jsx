@@ -100,6 +100,16 @@ const Dospělí = () => {
           />
         </Route>
 
+        <Route path="/dospeli/dobrarada">
+          <Str
+            title="Dobrá rada"
+            path="../../assets/img/dospeli-img/Premysleni.jpg"
+            className={'obrazecek'}
+            text="I z malého platu můžete začít šetřit! Máme pro Vás dobrou radu, jak chytře rozdělit svoje peníze. Vaši výplatu si rozdělíte v poměru 7:2:1. To znamená, že 70% z Vaší výplaty půjde na nutné výdaje – platba za bydlení, různé poplatky, nákup potravin, drogerie. Druhá část, tedy 20 % z Vaší výplaty jsou peníze, které byste měli využít jako finanční rezervu pro případ nenadálé situace například nefunkčního počítače. Zbylých 10% je finanční částka, kterou můžete utratit dle vlastního uvážení za cokoliv po čem toužíte!
+            "
+          />
+        </Route>
+
         <Route path="/dospeli/bydleniaplatby">
           <Str
             title="Bydlení a různé platby"
@@ -119,6 +129,17 @@ const Dospělí = () => {
             text="Velmi důležité je si uvědomit, že reklama vznikla kvůli tomu, aby prodejce mohl prezentovat své výrobky a služby. Ne vždy je reklama pravdivá. Je na zvážení každého z nás, zda podlehneme kouzlu (manipulace) či ne! 
             Jsou firmy, které se snaží za každou cenu prodat cokoliv a kdykoliv. Abyste si ušetřili pád a bolestné zjištění, že jste byli napáleni, zjistěte si napřed co nejvíce informací o produktu či službě, která je nabízena v dotyčné reklamě. 
             Ideální je zadat si recenze na internetu a přečíst si názor jiných, kteří již měli možnost zhodnotit prezentované výrobky a služby v dotyčné reklamě.
+            "
+          />
+        </Route>
+
+        <Route path="/dospeli/pujckaadluhy">
+          <Str
+            title="Půjčky a dluhy"
+            path="../../assets/img/dospeli-img/UzRozumim.jpg"
+            className={'obrazecek'}
+            text="V tomto případě bychom Vás chtěli varovat. Musíte být obezřetní při výběru půjčky (úvěru). Každá půjčka se platí v pravidelných měsíčních splátkách. O tuto částku se Vám sníží Váš měšíční rozpočet. Při nevhodně zvolené půjčce se Vám může lehce stát, že nebude schopni splácet a dostanete se do finanční tísně!
+            Doporučili bychom Vám, postupně si na danou věc odkládat určitý finanční obnos (abyste si ji mohli pořídit), než si vzít nevhodný úvěr.           
             "
           />
         </Route>

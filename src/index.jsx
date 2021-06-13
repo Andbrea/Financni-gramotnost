@@ -123,6 +123,15 @@ const App = () => {
                   >
                     Vaše první výplata
                   </NavLink>
+
+                  <NavLink
+                    className="navigation-link"
+                    activeClassName="selected"
+                    to="/dospeli/dobrarada"
+                  >
+                    Dobrá rada
+                  </NavLink>
+
                   <NavLink
                     className="navigation-link"
                     activeClassName="selected"
@@ -136,6 +145,14 @@ const App = () => {
                     to="/dospeli/reklamaapravda"
                   >
                     Reklama a pravda
+                  </NavLink>
+
+                  <NavLink
+                    className="navigation-link"
+                    activeClassName="selected"
+                    to="/dospeli/pujckaadluhy"
+                  >
+                    Půjčky a dluhy
                   </NavLink>
                 </>
               }
