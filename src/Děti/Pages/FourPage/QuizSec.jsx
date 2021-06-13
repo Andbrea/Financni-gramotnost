@@ -2,18 +2,11 @@ import React from "react";
 import "./style.css";
 import * as ReactDOM from "react-dom";
 import Dragula from "react-dragula";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
-const items = ["auto", "pocitac", "chleba", "lizatko"];
+const items = ["pastelky", "morce", "kino", "plavani"];
 
-export class FourPage extends React.Component {
+export class QuizSec extends React.Component {
   constructor(props) {
     super(props);
     this.myRef = React.createRef();
@@ -29,7 +22,7 @@ export class FourPage extends React.Component {
       }
     }
     if (isCorrect) {
-      this.setState({ showResult: "Vše máš správně" });
+      this.setState({ showResult: "Gratuluji! Vše máš správně." });
     } else {
       this.setState({ showResult: "Máš tam chybu, zkus to znovu! :)" });
     }
@@ -40,7 +33,10 @@ export class FourPage extends React.Component {
       <>
         <div className="money-text">
           <h2>Kvíz</h2>
-          <p>Seřaď správně položky v seznamu od nejdražší po nejlevnější</p>
+          <p>
+            Teď to bude naopak! Seřaď správně položky od nejlevnější po
+            nejdražší
+          </p>
         </div>
         <div className="quiz calculator">
           <div
@@ -50,17 +46,17 @@ export class FourPage extends React.Component {
             className={"boxes"}
             ref={this.dragulaDecorator}
           >
-            <div id="chleba" className="box chleba">
-              Chleba
+            <div id="morce" className="box morce">
+              Nové morčátko
             </div>
-            <div id="lizatko" className="box lizatko">
-              Lízátko
+            <div id="plavani" className="box plavani">
+              Roční kurz plavání
             </div>
-            <div id="pocitac" className="box pocitac">
-              Počítač
+            <div id="pastelky" className="box pastelky">
+              Pastelky
             </div>
-            <div id="auto" className="box auto">
-              Auto
+            <div id="kino" className="box kino">
+              Lístek do kina
             </div>
           </div>
           <button className="btnElm" onClick={this.handleSubmit}>
@@ -69,8 +65,18 @@ export class FourPage extends React.Component {
           {this.state.showResult && (
             <div className="result-text">{this.state.showResult}</div>
           )}
-          <Link to="/deti/pokracovat">
-            <button className="btnElm-pexeso">Zkusit jiný</button>
+        </div>
+        <div className="money-text kviz">
+          Skvělé! Došel jsi až na konec této kategorie. V základech finanční
+          gramotnosti už musíš být sběhlý. Pokud se na to cítíš, vyzkoušej i
+          další kategorii.
+          <img
+            className="teensFoto"
+            src="/assets/img/TeensColor.svg"
+            alt="teenageri foto"
+          />
+          <Link to="/teenageri">
+            <button className="btnElm-pexeso">Teenageři</button>
           </Link>
         </div>
       </>
