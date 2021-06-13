@@ -66,7 +66,7 @@ const App = () => {
 
           <Route path="/dospeli">
             <PageLayout
-              title=""
+              title="DOSPĚLÍ"
               links={
                 <>
                   <NavLink
@@ -99,6 +99,7 @@ const App = () => {
                   >
                     Platební karta
                   </NavLink>
+
                   <NavLink
                     className="navigation-link"
                     activeClassName="selected"
@@ -106,14 +107,22 @@ const App = () => {
                   >
                     Studium verzus práce
                   </NavLink>
+
                   <NavLink
                     className="navigation-link"
                     activeClassName="selected"
-                    to="/dospeli/vyplataacoobsahuje"
+                    to="/dospeli/prvniprace"
                   >
-                    Výplata a co obsahuje
+                    První práce
                   </NavLink>
 
+                  <NavLink
+                    className="navigation-link"
+                    activeClassName="selected"
+                    to="/dospeli/vaseprvnivyplata"
+                  >
+                    Vaše první výplata
+                  </NavLink>
                   <NavLink
                     className="navigation-link"
                     activeClassName="selected"
