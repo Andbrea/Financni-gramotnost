@@ -40,7 +40,10 @@ export class FourPage extends React.Component {
       <>
         <div className="money-text">
           <h2>Kvíz</h2>
-          <p>Seřaď správně položky v seznamu od nejdražší po nejlevnější</p>
+          <p>
+            Seřaď správně položky v seznamu od <strong>nejdražší</strong> po
+            nejlevnější
+          </p>
         </div>
         <div className="quiz calculator">
           <div

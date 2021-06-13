@@ -34,8 +34,8 @@ export class QuizSec extends React.Component {
         <div className="money-text">
           <h2>Kvíz</h2>
           <p>
-            Teď to bude naopak! Seřaď správně položky od nejlevnější po
-            nejdražší
+            Teď to bude naopak! Seřaď správně položky od{" "}
+            <strong>nejlevnější</strong> po nejdražší
           </p>
         </div>
         <div className="quiz calculator">

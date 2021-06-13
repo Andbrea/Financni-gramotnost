@@ -16,6 +16,16 @@ const items = [
     isFlipped: false,
   },
   {
+    type: "petiKoruna",
+    img: petiKoruna,
+    isFlipped: false,
+  },
+  {
+    type: "desetiKoruna",
+    img: desetiKoruna,
+    isFlipped: false,
+  },
+  {
     type: "dveKoruna",
     img: dveKoruna,
     isFlipped: false,
@@ -26,8 +36,8 @@ const items = [
     isFlipped: false,
   },
   {
-    type: "desetiKoruna",
-    img: desetiKoruna,
+    type: "koruna",
+    img: koruna,
     isFlipped: false,
   },
   {
@@ -41,18 +51,8 @@ const items = [
     isFlipped: false,
   },
   {
-    type: "koruna",
-    img: koruna,
-    isFlipped: false,
-  },
-  {
     type: "dveKoruna",
     img: dveKoruna,
-    isFlipped: false,
-  },
-  {
-    type: "petiKoruna",
-    img: petiKoruna,
     isFlipped: false,
   },
   {
@@ -87,7 +87,9 @@ const Pexeso = () => {
   useEffect(() => {
     console.log(revealedTypes);
     if (revealedTypes.length === 6) {
-      setIsFinished("Vyhráááál jsi!!!");
+      setIsFinished(
+        "Vyhrál jsi!!! Zajímá tě, k čemu slouží peníze ? Pokračuj na další téma! :)"
+      );
     }
   }, [revealedTypes]);
 
@@ -126,7 +128,9 @@ const Pexeso = () => {
     <div className="App">
       <header>
         <h2>Pexeso</h2>
-        <div>Vyber dvě karty se shodnými obrázky a tím vyhraješ hru!</div>
+        <div className="money-text">
+          Vyber dvě karty se shodnými obrázky a tím vyhraješ hru!
+        </div>
       </header>
       <div className="pexeso-grid">
         <div className="cardlist-pexeso">
@@ -152,10 +156,12 @@ const Pexeso = () => {
             );
           })}
         </div>
-        <p className="finished-text">{finished}</p>
-        <button className="btnElm " onClick={handleReset}>
-          Hrat znova
-        </button>
+        <div className="pexeso-text">
+          <button className="btnElm " onClick={handleReset}>
+            Hrát znova
+          </button>
+          <p className="finished-text">{finished}</p>
+        </div>
       </div>
     </div>
   );
