@@ -84,7 +84,12 @@ const Pexeso = () => {
           {items.map((card, index) => {
             return (
               <div key={index} className="flip-card-wrap-pexeso">
-                <Card card={card} />
+                <Card
+                  card={card}
+                  type={card.type}
+                  image={card.img}
+                  isFlipped={card.isFlipped}
+                />
               </div>
             );
           })}

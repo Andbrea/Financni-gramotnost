@@ -7,29 +7,27 @@ import desetiKoruna from "../img/Mince_10Kč_vzor_2003_rubová_strana.jpg";
 import dvacetiKoruna from "../img/20_2004_3B.jpg";
 import padesatiKoruna from "../img/50_1999_1B.jpg";
 
-export const Card = ({ card }) => {
-  /*   const [isFlipped, setIsFlipped] = useState(false);
-  const handleClick = () => {
-    setIsFlipped(!isFlipped);
-  }; */
+export const Card = ({ image, isFlipped }) => {
+  const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
-    card.isFlipped = !card.isFlipped;
-    console.log(card.isFlipped);
+    setIsActive(!isActive);
   };
+
+  /*   const handleClick = () => {
+    isFlipped = !isFlipped;
+    console.log(isFlipped);
+  }; */
   return (
     <>
       <div
-        className="flip-card-pexeso"
-        className={`flip-card-pexeso ${card.isFlipped ? "is-active" : ""} ${
-          card.isDisabled ? "is-disabled" : ""
-        }`}
+        className={`flip-card-pexeso ${isActive ? "is-active" : ""}`}
         onClick={handleClick}
       >
         <div className="flip-card-inner-pexeso">
           <div className="flip-card-front-pexeso"></div>
           <div className="flip-card-back-pexeso">
-            <img className="card-image-pexeso" src={card.img} />
+            <img className="card-image-pexeso" src={image} />
           </div>
         </div>
       </div>
