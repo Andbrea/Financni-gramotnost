@@ -51,7 +51,7 @@ const Teens = () => {
                 <Route path="/teenageri/sporicikalkulacka">
                     <Page
                         title="Spořicí kalkulačka"
-                        text="zde je kalkulačka, která ti pomůže šetřit..."
+                        text="Spočítej si, kolik musíš průběžně šetřit peněz, abys dosáhl cílové částky."
                     >
                         <SavingCalculator />
                     </Page>

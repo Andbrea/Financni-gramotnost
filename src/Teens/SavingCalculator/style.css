@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
 }
 
 .calculator-box {
@@ -54,7 +55,7 @@ input[type='number']:disabled {
 }
 
 .button-count {
-    margin-top: 18px;
+    margin-top: 14px;
     border: 1px solid rgb(113, 137, 143);
     border-radius: 5px;
     padding: 8px 16px;
@@ -69,7 +70,7 @@ input[type='number']:disabled {
 }
 
 .calc-result {
-    background-color: rgb(204, 231, 238);
-    padding: 18px;
+    background-color: (170 228 243 / 67%);
+    padding: 14px;
     margin: 0 10px;
 }

@@ -1,6 +1,3 @@
-body {
-  background: #f7f6e2;
-}
 .cardList {
   display: flex;
   width: 100%;
@@ -18,7 +15,7 @@ body {
 .flip-card {
   background-color: transparent;
   width: 100%;
-
+  cursor: pointer;
   perspective: 1000px;
 }
 
@@ -59,6 +56,7 @@ body {
   padding: 15px;
   font-size: 0.875rem;
   backface-visibility: hidden;
+  justify-content: center;
 }
 .flipImage {
   width: 100%;
