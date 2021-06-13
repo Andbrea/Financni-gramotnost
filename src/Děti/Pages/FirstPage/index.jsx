@@ -58,11 +58,11 @@ const FirstPage = () => {
       </div>
       <div className="introPexeso">
         <p>Myslíš, že je znáš všechny? Pojď si to vyzkoušet!</p>
-      </div>
-      <div className="btn-pexeso">
-        <Link to="/deti/pexeso">
-          <button className="btnElm-pexeso">Hrát</button>
-        </Link>
+        <div className="btn-pexeso">
+          <Link to="/deti/pexeso">
+            <button className="btnElm-pexeso">Hrát</button>
+          </Link>
+        </div>
       </div>
     </>
   );
