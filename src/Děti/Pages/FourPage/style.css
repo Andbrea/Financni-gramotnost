@@ -79,10 +79,6 @@
   flex-direction: column;
 }
 .teensFoto {
-  height: 200px;
-  width: 200px;
-}
-.money-text {
-  padding-top: 15px;
-  padding-bottom: 10px;
+  height: 100px;
+  width: 100px;
 }
