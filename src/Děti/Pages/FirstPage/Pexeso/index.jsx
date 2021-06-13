@@ -71,19 +71,37 @@ const items = [
     isFlipped: false,
   },
 ];
+console.log(items);
 
 const Pexeso = () => {
+  const [pair, setPair] = useState([]);
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = (index) => {
+    let selectedItem = items[index];
+    setPair((current) => [...current, index]);
+  };
+
   return (
     <div className="App">
       <header>
         <h2>Pexeso</h2>
         <div>Vyber dvě karty se shodnými obrázky a tím vyhraješ hru!</div>
       </header>
+      {pair.map((cardIndex, index) => {
+        return <div key={index}>{JSON.stringify(items[cardIndex])}</div>;
+      })}
       <div className="pexeso-grid">
         <div className="cardlist-pexeso">
           {items.map((card, index) => {
             return (
-              <div key={index} className="flip-card-wrap-pexeso">
+              <div
+                onClick={() => {
+                  handleClick(index);
+                }}
+                key={index}
+                className="flip-card-wrap-pexeso"
+              >
                 <Card
                   card={card}
                   type={card.type}

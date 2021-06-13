@@ -6,6 +6,7 @@
 .box,
 .boxes > div {
   border: 1px solid black;
+  background-color: #f8fcf8;
   padding-left: 50px;
   padding-right: 50px;
   justify-content: space-between;
@@ -14,11 +15,17 @@
   max-width: 300px;
   cursor: pointer;
 }
+.quiz {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .box:hover {
-  background: red;
+  background: rgb(247, 117, 117);
 }
 .onSelected {
-  background-color: red;
+  background-color: rgb(247, 117, 117);
 }
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
@@ -66,4 +73,16 @@
   opacity: 0.2;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
   filter: alpha(opacity=20);
+}
+.result.text {
+  display: flex;
+  flex-direction: column;
+}
+.teensFoto {
+  height: 200px;
+  width: 200px;
+}
+.money-text {
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
