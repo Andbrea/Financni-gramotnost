@@ -34,8 +34,8 @@ export class QuizSec extends React.Component {
         <div className="money-text">
           <h2>Kvíz</h2>
           <p>
-            Teď to bude naopak! Seřaď správně položky od nejlevnější po
-            nejdražší
+            Teď to bude naopak! Seřaď správně položky od{" "}
+            <strong>nejlevnější</strong> po nejdražší
           </p>
         </div>
         <div className="quiz calculator">
@@ -68,8 +68,8 @@ export class QuizSec extends React.Component {
         </div>
         <div className="money-text kviz">
           Skvělé! Došel jsi až na konec této kategorie. V základech finanční
-          gramotnosti už musíš být sběhlý. Pokud se na to cítíš, vyzkoušej i
-          další kategorii.
+          gramotnosti už musíš být sběhlý. Pokud se na to cítíš, zkus i další
+          kategorii.
           <img
             className="teensFoto"
             src="/assets/img/TeensColor.svg"

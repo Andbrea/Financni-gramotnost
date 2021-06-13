@@ -1,7 +1,7 @@
 .cardlist-pexeso {
   display: flex;
   width: 100%;
-  max-width: 700px;
+  max-width: 500px;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
@@ -17,6 +17,10 @@
   width: 100%;
   cursor: pointer;
   perspective: 1000px;
+}
+.flip-card-pexeso.is-disabled {
+  pointer-events: none;
+  opacity: 0.2;
 }
 
 .flip-card-inner-pexeso {
@@ -62,4 +66,13 @@
   height: 100%;
   object-fit: contain;
   background-color: #ffffff;
+}
+.finished-text {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 150px;
+}
+.pexeso-text {
+  display: flex;
+  flex-direction: row;
 }

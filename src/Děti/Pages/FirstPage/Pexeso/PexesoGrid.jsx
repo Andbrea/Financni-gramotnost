@@ -7,12 +7,10 @@ import desetiKoruna from "../img/Mince_10Kč_vzor_2003_rubová_strana.jpg";
 import dvacetiKoruna from "../img/20_2004_3B.jpg";
 import padesatiKoruna from "../img/50_1999_1B.jpg";
 
-export const Card = ({ image, isFlipped }) => {
-  const [isActive, setIsActive] = useState(false);
-
-  const handleClick = () => {
+export const Card = ({ image, isFlipped, isDisabled }) => {
+  /*   const handleClick = () => {
     setIsActive(!isActive);
-  };
+  }; */
 
   /*   const handleClick = () => {
     isFlipped = !isFlipped;
@@ -21,8 +19,9 @@ export const Card = ({ image, isFlipped }) => {
   return (
     <>
       <div
-        className={`flip-card-pexeso ${isActive ? "is-active" : ""}`}
-        onClick={handleClick}
+        className={`flip-card-pexeso ${isFlipped ? "is-active" : ""} ${
+          isDisabled ? "is-disabled" : ""
+        }`}
       >
         <div className="flip-card-inner-pexeso">
           <div className="flip-card-front-pexeso"></div>
