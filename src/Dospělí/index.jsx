@@ -66,7 +66,7 @@ const Dospělí = () => {
           />
         </Route>
 
-        <Route path="/dospeli/studiumverzusprace">
+        <Route path="/dospeli/studiumversusprace">
           <Str
             title="Studium versus práce"
             path="../../assets/img/dospeli-img/AcoBudeDal.jpg"

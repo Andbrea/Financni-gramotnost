@@ -103,9 +103,9 @@ const App = () => {
                   <NavLink
                     className="navigation-link"
                     activeClassName="selected"
-                    to="/dospeli/studiumverzusprace"
+                    to="/dospeli/studiumversusprace"
                   >
-                    Studium verzus práce
+                    Studium versus práce
                   </NavLink>
 
                   <NavLink
