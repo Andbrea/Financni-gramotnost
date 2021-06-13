@@ -76,28 +76,67 @@ console.log(items);
 const Pexeso = () => {
   const [pair, setPair] = useState([]);
   const [isActive, setIsActive] = useState(false);
+  const [open, setIsOpen] = useState([]);
+  const [revealedTypes, setIsRevealed] = useState([]);
+  const [finished, setIsFinished] = useState("");
 
   const handleClick = (index) => {
-    let selectedItem = items[index];
     setPair((current) => [...current, index]);
   };
 
+  useEffect(() => {
+    console.log(revealedTypes);
+    if (revealedTypes.length === 6) {
+      setIsFinished("Vyhráááál jsi!!!");
+    }
+  }, [revealedTypes]);
+
+  useEffect(() => {
+    if (pair.length === 1) {
+      console.log("vyber jeste jednu");
+    } else if (pair.length === 2) {
+      console.log("uz vic ne");
+      const chosenFirst = pair[0];
+      const chosenSec = pair[1];
+      if (items[chosenFirst].type === items[chosenSec].type) {
+        setIsRevealed((current) => [...current, items[chosenFirst].type]);
+        console.log("jsou stejni");
+      } else {
+        console.log("Njesou stejni");
+      }
+      setTimeout(() => {
+        setPair([]);
+      }, 1000);
+    }
+  }, [pair]);
+
+  const isCardActive = (index) => {
+    const filtered = pair.filter((item) => item === index);
+    /*  console.log(filtered); */
+    return filtered.length > 0;
+  };
+  const cardRevealed = (type) => {
+    const filteredTypes = revealedTypes.filter((item) => item === type);
+    return filteredTypes.length > 0;
+  };
+  const handleReset = () => {
+    setIsRevealed([]);
+  };
   return (
     <div className="App">
       <header>
         <h2>Pexeso</h2>
         <div>Vyber dvě karty se shodnými obrázky a tím vyhraješ hru!</div>
       </header>
-      {pair.map((cardIndex, index) => {
-        return <div key={index}>{JSON.stringify(items[cardIndex])}</div>;
-      })}
       <div className="pexeso-grid">
         <div className="cardlist-pexeso">
           {items.map((card, index) => {
             return (
               <div
                 onClick={() => {
-                  handleClick(index);
+                  if (!cardRevealed(card.type)) {
+                    handleClick(index);
+                  }
                 }}
                 key={index}
                 className="flip-card-wrap-pexeso"
@@ -106,12 +145,17 @@ const Pexeso = () => {
                   card={card}
                   type={card.type}
                   image={card.img}
-                  isFlipped={card.isFlipped}
+                  isFlipped={isCardActive(index)}
+                  isDisabled={cardRevealed(card.type)}
                 />
               </div>
             );
           })}
         </div>
+        <p className="finished-text">{finished}</p>
+        <button className="btnElm " onClick={handleReset}>
+          Hrat znova
+        </button>
       </div>
     </div>
   );
