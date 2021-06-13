@@ -11,7 +11,7 @@ const Dospělí = () => {
                     <Str
                         title="Finanční gramotnost"
                         path="../../assets/img/dospeli-img/FinGramo.jpg"
-                        className={'dospelaci'}
+                        className={'obrazecek'}
                         altName="Dospělí"
                         text="Finanční gramotnost je soubor znalostí a dovedností, které člověku umožňují porozumět financím  (chcete-li jiný termín: svět peněz.) Správně s nimi zacházet v různých životních situacích a také zabezpečit sebe i svoji rodinu. 
             Každý z nás má nějaké znalosti. I přesto je velmi důležité se nadále vzdělávat a rozšiřovat si své vědomosti. Jen tak si zajistíme, že se nám vyhnou jisté nepříjemnosti, které na nás občas číhají.
