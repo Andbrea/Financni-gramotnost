@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./style.css";
-import PexesoGrid from "./PexesoGrid";
 import koruna from "../img/1_2004_1B.jpg";
 import dveKoruna from "../img/2_1999_1B.jpg";
 import petiKoruna from "../img/5_1999_1B.jpg";
@@ -75,8 +74,6 @@ console.log(items);
 
 const Pexeso = () => {
   const [pair, setPair] = useState([]);
-  const [isActive, setIsActive] = useState(false);
-  const [open, setIsOpen] = useState([]);
   const [revealedTypes, setIsRevealed] = useState([]);
   const [finished, setIsFinished] = useState("");
 
@@ -88,7 +85,7 @@ const Pexeso = () => {
     console.log(revealedTypes);
     if (revealedTypes.length === 6) {
       setIsFinished(
-        "Vyhrál jsi!!! Zajímá tě, k čemu slouží peníze ? Pokračuj na další téma! :)"
+        "Vyhrál jsi!!! Zajímá tě, k čemu slouží peníze? Pokračuj na další téma! :)"
       );
     }
   }, [revealedTypes]);

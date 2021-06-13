@@ -8,14 +8,6 @@ import dvacetiKoruna from "../img/20_2004_3B.jpg";
 import padesatiKoruna from "../img/50_1999_1B.jpg";
 
 export const Card = ({ image, isFlipped, isDisabled }) => {
-  /*   const handleClick = () => {
-    setIsActive(!isActive);
-  }; */
-
-  /*   const handleClick = () => {
-    isFlipped = !isFlipped;
-    console.log(isFlipped);
-  }; */
   return (
     <>
       <div
